@@ -1,0 +1,73 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 280px; /* 1 */
+  margin-left: auto; /* 2 */
+  margin-right: auto; /* 2 */
+  padding-left: 10px; /* 3 */
+  padding-right: 10px; /* 3 */
+  box-sizing: content-box;
+  width: 100%; /* 1 */
+  @media (min-width: 340px) {
+    max-width: 300px;
+    padding-left: 20px; /* 3 */
+    padding-right: 20px; /* 3 */
+  }
+  @media (min-width: 360px) {
+    max-width: 320px;
+  }
+  &:not(.es-chico) {
+    @include mq($from: tablet) {
+      box-sizing: border-box;
+      max-width: $max-width;
+    }
+  }
+}
+
+.has-no-overflow-x {
+  overflow-x: hidden;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.is-hidden-mobile {
+  @include mq($until: tablet) {
+    display: none;
+  }
+}
+.is-hidden-desktop {
+  @include mq($from: tablet) {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 14px / 1.4 serif;
+}
+
+h1,
+.h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2,
+.h2 {
+  font: normal normal 700 20px/33px sans-serif;
+  margin: 0;
+}

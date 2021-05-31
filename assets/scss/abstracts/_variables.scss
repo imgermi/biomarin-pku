@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$serif-font-stack: 'TimesNewRoman', 'Times New Roman', 'Times', 'Baskerville',
+  serif;
+$sans-serif-font-stack: 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif;
+
+/// Copy text color
+/// @type Color
+$text-color: #000000 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #1d68a4 !default;
+
+/// Secondary brand color
+/// @type Color
+$brand-secondary-color: #00b9f1 !default;
+
+/// Error color
+/// @type Color
+$error-color: #b7202e !default;
+
+// Grey
+/// @type Color
+$grey: #f2f2f2 !default;
+$light-grey: #efefef !default;
+$dark-grey: #24293f !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1080px !default;
+
+/// Container's min width
+/// @type Length
+$min-width: 300px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$mq-breakpoints: (
+  mobile: 320px,
+  tablet: 740px,
+  desktop: 980px,
+  wide: 1300px,
+  // Tweakpoints
+  desktopAd: 810px,
+  mobileLandscape: 480px,
+) !default;

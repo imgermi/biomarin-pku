@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:active,
+    &:focus {
+      @content;
+    }
+    /* solves sticky problem on mobile */
+    @media (hover: hover) {
+      &:hover {
+        @content;
+      }
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+/**
+ * Media query helpers
+ * https://github.com/sass-mq/sass-mq
+ */
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width. For example: (mobile, tablet, desktop).
+// $mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+
+@import '~sass-mq';
