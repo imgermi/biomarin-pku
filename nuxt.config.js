@@ -17,7 +17,7 @@ export default {
     title: process.env.TITLE,
     titleTemplate: process.env.TITLE + ' | %s',
     htmlAttrs: {
-      lang: process.env.LOCALE,
+      lang: process.env.LANG,
     },
     meta: [
       { charset: 'utf-8' },
@@ -38,11 +38,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [
-    '~/plugins/axios',
-    '~/plugins/axe',
-    '~/plugins/vee-validate',
-  ],
+  plugins: ['~/plugins/axios', '~/plugins/axe', '~/plugins/vee-validate'],
 
   /*
    ** Auto import components
@@ -74,25 +70,72 @@ export default {
 
     // Docs: https://nuxt-speedkit.grabarzundpartner.dev/options
     // https://www.zachleat.com/web/comprehensive-webfonts/#critical-foft-with-preload
-    ['nuxt-speedkit', {
-      detection: {
-        performance: true,
-        browserSupport: true
+    [
+      'nuxt-speedkit',
+      {
+        detection: {
+          performance: true,
+          browserSupport: true,
+        },
+        performance: {},
+        fonts: [
+          {
+            family: 'Roboto',
+            locals: ['Roboto'],
+            fallback: ['Franklin Gothic Medium', 'Tahoma', 'sans-serif'],
+            variances: [
+              {
+                style: 'normal',
+                weight: 400,
+                sources: [
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-Regular.ttf',
+                    type: 'ttf',
+                  },
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-Regular.woff',
+                    type: 'woff',
+                  },
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-Regular.woff2',
+                    type: 'woff2',
+                  },
+                ],
+              },
+              {
+                style: 'normal',
+                weight: 200,
+                sources: [
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-Light.ttf',
+                    type: 'ttf',
+                  },
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-Light.woff',
+                    type: 'woff',
+                  },
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-Light.woff2',
+                    type: 'woff2',
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+
+        componentAutoImport: false,
+        componentPrefix: undefined,
+
+        /**
+         * IntersectionObserver rootMargin for Compoennts and Assets
+         */
+        lazyOffset: {
+          component: '0%',
+          asset: '0%',
+        },
       },
-      performance: {},
-      fonts: [],
-  
-      componentAutoImport: false,
-      componentPrefix: undefined,
-  
-      /**
-       * IntersectionObserver rootMargin for Compoennts and Assets
-       */
-      lazyOffset: {
-        component: '0%',
-        asset: '0%'
-      }
-    }],
+    ],
 
     // Docs: https://www.npmjs.com/package/nuxt-social-meta
     [
@@ -125,11 +168,11 @@ export default {
     scss: ['~/assets/scss/abstracts/*.scss'],
   },
 
-    /*
+  /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-   build: {
+  build: {
     // https://logaretm.github.io/vee-validate/guide/rules.html#importing-rules-in-nuxt-js
     transpile: ['vee-validate/dist/rules'],
   },
