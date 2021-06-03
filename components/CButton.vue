@@ -1,10 +1,5 @@
 <template>
-  <Component
-    :is="is"
-    :to="to"
-    class="btn"
-    v-on="$listeners"
-  >
+  <Component :is="is" :to="to" class="btn" v-on="$listeners">
     <slot>Button</slot>
   </Component>
 </template>
