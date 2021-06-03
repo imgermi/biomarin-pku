@@ -84,7 +84,6 @@
 @include mq($from: desktop) {
   .cabecera {
     .container {
-      padding: 0 50px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;

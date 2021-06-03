@@ -57,10 +57,12 @@
                 <NuxtLink to="campania"> La campaña </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="pku"> Fenilcetonuria (PKU) </NuxtLink>
+                <NuxtLink to="fenilcetonuria-pku">
+                  Fenilcetonuria (PKU)
+                </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="informacion-util">Información Útil </NuxtLink>
+                <NuxtLink to="fundacion-enhue">Información Útil </NuxtLink>
               </li>
             </ul>
           </nav>

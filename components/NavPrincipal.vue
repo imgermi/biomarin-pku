@@ -16,7 +16,7 @@
             ¿Qué es la fenilcetonuria (PKU)?
           </NuxtLink>
           <NuxtLink tag="button" to="diagnostico"> Diagnóstico </NuxtLink>
-          <NuxtLink tag="button" to="tratamieno-y-avances">
+          <NuxtLink tag="button" to="tratamiento-y-avances">
             Tratamiento y avances
           </NuxtLink>
           <NuxtLink tag="button" to="enfermedad-en-nuestro-pais">
