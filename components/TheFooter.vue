@@ -112,14 +112,16 @@
         </section>
       </div>
       <div>
-        <!-- TODO: Definir si agregarle enlace a logo de la fundación Enhue del pie -->
-        <img
-          class="pie-logo"
-          width="240"
-          height="69"
-          src="~assets/img/logo-fundacion-enhue.png"
-          alt="Fundación Enhué"
-        />
+        <!-- TODO: Agregar enlace a la fundación Enhue -->
+        <a href="" rel="noopener noreferrer" target="_blank">
+          <img
+            class="pie-logo"
+            width="240"
+            height="69"
+            src="~assets/img/logo-fundacion-enhue.png"
+            alt="Fundación Enhué"
+          />
+        </a>
 
         <p class="pie-legales">Copyright @ 2020 All Rights Reserved.</p>
       </div>
