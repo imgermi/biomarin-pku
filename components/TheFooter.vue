@@ -54,10 +54,10 @@
                 <NuxtLink to="/"> Home </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="campania"> La campaña </NuxtLink>
+                <NuxtLink to="la-campana"> La campaña </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="fenilcetonuria-pku">
+                <NuxtLink to="que-es-la-fenilcetonuria">
                   Fenilcetonuria (PKU)
                 </NuxtLink>
               </li>

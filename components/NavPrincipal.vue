@@ -8,18 +8,23 @@
   >
     <ul>
       <li>
-        <NuxtLink to="campania"> La campaña </NuxtLink>
+        <NuxtLink to="la-campana"> La campaña </NuxtLink>
       </li>
       <li>
         <NavPrincipalMenu id="menu-pku" titulo="Fenilcetonuria (PKU)">
-          <NuxtLink tag="button" to="fenilcetonuria-pku">
+          <NuxtLink tag="button" to="que-es-la-fenilcetonuria">
             ¿Qué es la fenilcetonuria (PKU)?
           </NuxtLink>
-          <NuxtLink tag="button" to="diagnostico"> Diagnóstico </NuxtLink>
-          <NuxtLink tag="button" to="tratamiento-y-avances">
+          <NuxtLink tag="button" to="diagnostico-de-la-fenilcetonuria">
+            Diagnóstico
+          </NuxtLink>
+          <NuxtLink
+            tag="button"
+            to="tratamiento-y-avances-sobre-la-fenilcetonuria"
+          >
             Tratamiento y avances
           </NuxtLink>
-          <NuxtLink tag="button" to="enfermedad-en-nuestro-pais">
+          <NuxtLink tag="button" to="la-fenilcetonuria-en-nuestro-pais">
             La enfermedad en nuestro país
           </NuxtLink>
         </NavPrincipalMenu>
@@ -29,13 +34,18 @@
           <NuxtLink tag="button" to="fundacion-enhue">
             Fundación Enhué
           </NuxtLink>
-          <NuxtLink tag="button" to="centros-de-tratamiento">
+          <NuxtLink
+            tag="button"
+            to="centros-de-tratamiento-de-la-fenilcetonuria"
+          >
             Centros de tratamiento
           </NuxtLink>
-          <NuxtLink tag="button" to="apoyo-al-paciente">
+          <NuxtLink tag="button" to="apoyo-al-paciente-con-fenilcetonuria">
             Apoyo al paciente
           </NuxtLink>
-          <NuxtLink tag="button" to="consultas">Consultas</NuxtLink>
+          <NuxtLink tag="button" to="consultas-sobre-la-fenilcetonuria">
+            Consultas
+          </NuxtLink>
         </NavPrincipalMenu>
       </li>
     </ul>
