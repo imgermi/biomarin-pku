@@ -7,7 +7,7 @@ import {
   extend,
   setInteractionMode,
 } from 'vee-validate'
-import { messages } from 'vee-validate/dist/locale/es'
+import { messages } from 'vee-validate/dist/locale/es.json'
 
 /* eslint-disable camelcase */
 import {
