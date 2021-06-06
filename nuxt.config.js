@@ -138,6 +138,24 @@ export default {
                   },
                 ],
               },
+              {
+                style: 'italic',
+                weight: 200,
+                sources: [
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-LightItalic.ttf',
+                    type: 'ttf',
+                  },
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-LightItalic.woff',
+                    type: 'woff',
+                  },
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-LightItalic.woff2',
+                    type: 'woff2',
+                  },
+                ],
+              },
             ],
           },
           {
