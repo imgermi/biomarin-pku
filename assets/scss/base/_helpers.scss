@@ -33,11 +33,9 @@
   @media (min-width: 360px) {
     max-width: 320px;
   }
-  &:not(.es-chico) {
-    @include mq($from: tablet) {
-      box-sizing: border-box;
-      max-width: $max-width;
-    }
+  @include mq($from: tablet) {
+    box-sizing: border-box;
+    max-width: $max-width;
   }
 }
 
@@ -70,4 +68,8 @@
   @include mq($from: tablet) {
     display: none;
   }
+}
+
+.has-brand-color-bg {
+  background-color: $brand-color;
 }

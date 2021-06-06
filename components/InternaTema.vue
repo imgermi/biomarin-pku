@@ -6,7 +6,9 @@
 
 <style lang="scss" scoped>
 .tema {
-  font-size: 22.86px;
+  font-size: rem(20px);
+  display: flex;
+  align-items: center;
   &::after {
     content: '';
     display: inline-block;
@@ -17,11 +19,8 @@
   }
   @include mq($from: tablet) {
     &::after {
-      width: 8em;
+      width: 7em;
     }
-  }
-  @media (min-width: $max-width + 100px) {
-    margin-left: -50px;
   }
 }
 </style>

@@ -17,7 +17,7 @@ export default {
     title: process.env.TITLE,
     titleTemplate: process.env.TITLE + ' | %s',
     htmlAttrs: {
-      lang: process.env.LANG,
+      lang: 'es',
     },
     meta: [
       { charset: 'utf-8' },
@@ -116,6 +116,37 @@ export default {
                   },
                   {
                     src: '@/assets/fonts/Roboto/Roboto-Light.woff2',
+                    type: 'woff2',
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            family: 'Playfair Display',
+            locals: ['Playfair Display'],
+            fallback: [
+              'TimesNewRoman',
+              'Times New Roman',
+              'Times',
+              'Baskerville',
+              'serif',
+            ],
+            variances: [
+              {
+                style: 'normal',
+                weight: 400,
+                sources: [
+                  {
+                    src: '@/assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf',
+                    type: 'ttf',
+                  },
+                  {
+                    src: '@/assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff',
+                    type: 'woff',
+                  },
+                  {
+                    src: '@/assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2',
                     type: 'woff2',
                   },
                 ],

@@ -1,3 +1,8 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
+
+// https://github.com/pierreburel/sass-rem
+// Sass function and mixin to use rem units with optional pixel fallback.
+@import '~sass-rem';
+$rem-baseline: 20px;

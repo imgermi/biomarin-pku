@@ -19,6 +19,7 @@
     "nuxt-social-meta": "^0.0.5",
     "nuxt-speedkit": "^1.2.5",
     "sass-mq": "^5.0.1",
+    "sass-rem": "^2.0.1",
     "vee-validate": "^3.4.8"
   },
   "devDependencies": {

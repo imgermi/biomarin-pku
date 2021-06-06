@@ -15,7 +15,7 @@ $text-color: #000000 !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #1d68a4 !default;
+$brand-color: #bbab94 !default;
 
 /// Secondary brand color
 /// @type Color
@@ -33,7 +33,15 @@ $dark-grey: #24293f !default;
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1080px !default;
+$max-width: 1320px !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
 
 /// Container's min width
 /// @type Length
