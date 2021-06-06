@@ -10,40 +10,7 @@
       <div class="pie-contenedor-interno">
         <section class="pie-seccion-redes">
           <h2>Acordate de <u>mí.</u></h2>
-          <ul>
-            <!-- TODO: Cambiar Facebook -->
-            <li>
-              <a
-                href="https://www.facebook.com/xxxxxxxx/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Facebook"
-              >
-                <img
-                  width="10"
-                  height="18"
-                  src="https://placeholder.pics/svg/10x18/DEDEDE/DEDEDE"
-                  alt="Facebook"
-                />
-              </a>
-            </li>
-            <!-- TODO: Cambiar instagram -->
-            <li>
-              <a
-                href="https://www.instagram.com/xxxxxxxx/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Instagram"
-              >
-                <img
-                  width="23"
-                  height="23"
-                  src="https://placeholder.pics/svg/23/DEDEDE/DEDEDE"
-                  alt="Instagram"
-                />
-              </a>
-            </li>
-          </ul>
+          <RedesSociales />
         </section>
 
         <section class="pie-seccion-menu">
@@ -171,23 +138,6 @@
     margin-bottom: 60px;
     u {
       text-decoration: underline;
-    }
-  }
-  ul {
-    display: flex;
-  }
-  li {
-    &:not(:last-child) {
-      margin-right: 26px;
-    }
-    a {
-      display: flex;
-      width: 47px;
-      height: 47px;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      border: 1px solid #b1b1b1;
     }
   }
 }

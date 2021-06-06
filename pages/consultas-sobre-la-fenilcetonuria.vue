@@ -75,9 +75,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  margin-bottom: 158px;
-}
 h1 {
   font-size: rem(50px);
   &::after {

@@ -46,7 +46,7 @@
 
 <style lang="scss" scoped>
 .cabecera {
-  padding: 50px 0 120px;
+  padding: 50px 0 20px;
   color: #000;
   background: transparent;
   .container {
