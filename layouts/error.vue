@@ -56,8 +56,8 @@ export default {
   text-align: center;
 }
 h1 {
-  color: $brand-color;
   font-size: rem(75px);
+  color: $brand-color;
   line-height: 1;
   margin: 0.5em 0 0.2em;
 }

@@ -73,7 +73,6 @@ export default {
 
 <style lang="scss" scoped>
 h1 {
-  font-size: rem(50px);
   &::after {
     content: '';
     display: inline-block;

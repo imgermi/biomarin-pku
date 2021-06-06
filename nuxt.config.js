@@ -86,6 +86,24 @@ export default {
             variances: [
               {
                 style: 'normal',
+                weight: 500,
+                sources: [
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-Medium.ttf',
+                    type: 'ttf',
+                  },
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-Medium.woff',
+                    type: 'woff',
+                  },
+                  {
+                    src: '@/assets/fonts/Roboto/Roboto-Medium.woff2',
+                    type: 'woff2',
+                  },
+                ],
+              },
+              {
+                style: 'normal',
                 weight: 400,
                 sources: [
                   {
