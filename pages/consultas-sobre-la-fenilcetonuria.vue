@@ -12,10 +12,7 @@
 
       <div>
         <form
-          v-font="[
-            $getFont('Roboto', 200),
-            $getFont('Roboto', 400, 'normal', { selector: '[type=submit]' }),
-          ]"
+          v-font="[$getFont('Roboto', 200)]"
           method="POST"
           action="thank-you-page"
         >
@@ -54,7 +51,7 @@
             </label>
           </div>
 
-          <button type="submit">Enviar</button>
+          <CButton type="submit">Enviar</CButton>
         </form>
       </div>
     </div>
@@ -198,16 +195,5 @@ input[type='checkbox'] {
   &:disabled + label::before {
     background: #ddd;
   }
-}
-
-[type='submit'] {
-  font-size: rem(19px);
-  text-transform: uppercase;
-  color: white;
-  background-color: black;
-  padding: 12px 22px;
-  margin-top: 20px;
-  border: 0;
-  border-radius: 9px;
 }
 </style>
