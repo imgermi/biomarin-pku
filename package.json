@@ -20,7 +20,8 @@
     "nuxt-speedkit": "^1.2.5",
     "sass-mq": "^5.0.1",
     "sass-rem": "^2.0.1",
-    "vee-validate": "^3.4.8"
+    "vee-validate": "^3.4.8",
+    "vue-tiny-slider": "^0.1.39"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",

@@ -38,7 +38,12 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/axios', '~/plugins/axe', '~/plugins/vee-validate'],
+  plugins: [
+    '~/plugins/axios',
+    '~/plugins/axe',
+    '~/plugins/vee-validate',
+    '~/plugins/tiny-slider.client.js',
+  ],
 
   /*
    ** Auto import components
