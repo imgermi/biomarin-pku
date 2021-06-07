@@ -192,6 +192,24 @@ export default {
                   },
                 ],
               },
+              {
+                style: 'normal',
+                weight: 700,
+                sources: [
+                  {
+                    src: '@/assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf',
+                    type: 'ttf',
+                  },
+                  {
+                    src: '@/assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff',
+                    type: 'woff',
+                  },
+                  {
+                    src: '@/assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff2',
+                    type: 'woff2',
+                  },
+                ],
+              },
             ],
           },
         ],
