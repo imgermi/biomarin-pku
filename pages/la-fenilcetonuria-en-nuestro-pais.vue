@@ -60,11 +60,7 @@
       </p>
     </div>
 
-    <div class="contacto">
-      <CButton to="consultas-sobre-la-fenilcetonuria">
-        Escribinos tu consulta
-      </CButton>
-    </div>
+    <SeccionContacto />
   </div>
 </template>
 
@@ -130,9 +126,6 @@ p {
   font-size: rem(75px);
   line-height: 1.1;
   font-weight: 400;
-}
-.contacto {
-  margin: 12rem 0 0 0;
 }
 @include mq($from: tablet) {
   .inner-container {
