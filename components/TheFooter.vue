@@ -21,15 +21,15 @@
                 <NuxtLink to="/"> Home </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="la-campana"> La campaña </NuxtLink>
+                <NuxtLink to="/la-campana"> La campaña </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="que-es-la-fenilcetonuria">
+                <NuxtLink to="/que-es-la-fenilcetonuria">
                   Fenilcetonuria (PKU)
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="fundacion-enhue">Información Útil </NuxtLink>
+                <NuxtLink to="/fundacion-enhue">Información Útil </NuxtLink>
               </li>
             </ul>
           </nav>

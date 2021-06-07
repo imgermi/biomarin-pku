@@ -71,7 +71,7 @@
         <a href="mailto:XXX@biomarin.com">XXX@biomarin.com</a>
       </p>
 
-      <CButton to="consultas-sobre-la-fenilcetonuria">
+      <CButton to="/consultas-sobre-la-fenilcetonuria">
         Escribinos tu consulta
       </CButton>
     </div>

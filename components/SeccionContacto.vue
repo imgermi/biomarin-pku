@@ -1,6 +1,6 @@
 <template>
   <div class="contacto">
-    <CButton to="consultas-sobre-la-fenilcetonuria">
+    <CButton to="/consultas-sobre-la-fenilcetonuria">
       Escribinos tu consulta
     </CButton>
     <!-- TODO: Agregar botón para compartir por WhatsApp -->

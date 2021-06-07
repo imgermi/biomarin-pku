@@ -8,42 +8,42 @@
   >
     <ul>
       <li>
-        <NuxtLink to="la-campana"> La campaña </NuxtLink>
+        <NuxtLink to="/la-campana"> La campaña </NuxtLink>
       </li>
       <li>
         <NavPrincipalMenu id="menu-pku" titulo="Fenilcetonuria (PKU)">
-          <NuxtLink tag="button" to="que-es-la-fenilcetonuria">
+          <NuxtLink tag="button" to="/que-es-la-fenilcetonuria">
             ¿Qué es la fenilcetonuria (PKU)?
           </NuxtLink>
-          <NuxtLink tag="button" to="diagnostico-de-la-fenilcetonuria">
+          <NuxtLink tag="button" to="/diagnostico-de-la-fenilcetonuria">
             Diagnóstico
           </NuxtLink>
           <NuxtLink
             tag="button"
-            to="tratamiento-y-avances-sobre-la-fenilcetonuria"
+            to="/tratamiento-y-avances-sobre-la-fenilcetonuria"
           >
             Tratamiento y avances
           </NuxtLink>
-          <NuxtLink tag="button" to="la-fenilcetonuria-en-nuestro-pais">
+          <NuxtLink tag="button" to="/la-fenilcetonuria-en-nuestro-pais">
             La enfermedad en nuestro país
           </NuxtLink>
         </NavPrincipalMenu>
       </li>
       <li>
         <NavPrincipalMenu id="menu-info" titulo="Información Útil">
-          <NuxtLink tag="button" to="fundacion-enhue">
+          <NuxtLink tag="button" to="/fundacion-enhue">
             Fundación Enhué
           </NuxtLink>
           <NuxtLink
             tag="button"
-            to="centros-de-tratamiento-de-la-fenilcetonuria"
+            to="/centros-de-tratamiento-de-la-fenilcetonuria"
           >
             Centros de tratamiento
           </NuxtLink>
-          <NuxtLink tag="button" to="apoyo-al-paciente-con-fenilcetonuria">
+          <NuxtLink tag="button" to="/apoyo-al-paciente-con-fenilcetonuria">
             Apoyo al paciente
           </NuxtLink>
-          <NuxtLink tag="button" to="consultas-sobre-la-fenilcetonuria">
+          <NuxtLink tag="button" to="/consultas-sobre-la-fenilcetonuria">
             Consultas
           </NuxtLink>
         </NavPrincipalMenu>
