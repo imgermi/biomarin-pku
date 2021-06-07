@@ -63,3 +63,32 @@ button:focus {
 main {
   padding: rem(180px) 0;
 }
+
+hr {
+  display: block;
+  width: 1px;
+  height: 7rem;
+  background: black;
+  margin: 2rem auto;
+}
+
+.img-wrapper {
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    background: $brand-color;
+    top: -7px;
+    right: -7px;
+    z-index: -1;
+  }
+}

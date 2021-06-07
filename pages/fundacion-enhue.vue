@@ -217,24 +217,8 @@ figure {
 }
 .img-wrapper {
   flex: 1 0 auto;
-  position: relative;
   width: 100%;
-  margin: 7px;
   margin-right: 50px;
-  img {
-    width: 100%;
-    height: auto;
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    width: calc(100% - 14px);
-    height: calc(100% - 14px);
-    background: $brand-color;
-    top: -7px;
-    right: -7px;
-    z-index: -1;
-  }
 }
 figcaption {
   flex: 1 1 auto;

@@ -27,6 +27,9 @@
           comenzó en 1985 y sigue coexistiendo en la actualidad con diversos
           programas realizados desde el sector público.
         </p>
+
+        <hr />
+
         <p class="texto-inner">
           A la fecha <strong>1,300,000</strong> niños estudiados, la
           Fenilcetonuria (PKU) mostró una incidencia de
@@ -93,14 +96,6 @@ h1 {
 .texto-inner {
   max-width: rem(540px);
   margin: 3em auto;
-  &::before {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 7rem;
-    background: black;
-    margin: 0 auto 2rem;
-  }
 }
 p {
   font-size: rem(30px);
