@@ -2,7 +2,7 @@
   <Component
     :is="is"
     v-font="$getFont('Roboto', 400, 'normal')"
-    :to="/to"
+    :to="to"
     class="btn"
     v-on="$listeners"
   >
