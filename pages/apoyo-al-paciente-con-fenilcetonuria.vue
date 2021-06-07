@@ -9,7 +9,10 @@
         width="434"
         height="434"
         src="~assets/img/apoyo-al-paciente.png"
-        srcset="~assets/img/apoyo-al-paciente.png x1, ~assets/img/apoyo-al-paciente-2x.png x2"
+        srcset="
+          ~assets/img/apoyo-al-paciente.png    1x,
+          ~assets/img/apoyo-al-paciente-2x.png 2x
+        "
         alt="Tres chicos abrazándose"
       />
       <div

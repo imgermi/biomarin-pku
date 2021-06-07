@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <!-- TODO: Cargar imagen x1 -->
+    <!-- TODO: Imagen 1x de página Fundación Enhué -->
     <img
       width="874"
       height="703.5"
@@ -47,7 +47,10 @@
                   width="695"
                   height="521"
                   src="https://placeholder.pics/svg/695x521/6F6F6E/6F6F6E"
-                  srcset="https://placeholder.pics/svg/695x521/6F6F6E/ x1, https://placeholder.pics/svg/1390x1042/6F6F6E/ x2"
+                  srcset="
+                    https://placeholder.pics/svg/695x521/6F6F6E/   1x,
+                    https://placeholder.pics/svg/1390x1042/6F6F6E/ 2x
+                  "
                   alt=""
                 />
               </div>
@@ -65,7 +68,10 @@
                   width="695"
                   height="521"
                   src="https://placeholder.pics/svg/695x521/6F6F6E/6F6F6E"
-                  srcset="https://placeholder.pics/svg/695x521/6F6F6E/ x1, https://placeholder.pics/svg/1390x1042/6F6F6E/ x2"
+                  srcset="
+                    https://placeholder.pics/svg/695x521/6F6F6E/   1x,
+                    https://placeholder.pics/svg/1390x1042/6F6F6E/ 2x
+                  "
                   alt=""
                 />
               </div>
@@ -83,7 +89,10 @@
                   width="695"
                   height="521"
                   src="https://placeholder.pics/svg/695x521/6F6F6E/6F6F6E"
-                  srcset="https://placeholder.pics/svg/695x521/6F6F6E/ x1, https://placeholder.pics/svg/1390x1042/6F6F6E/ x2"
+                  srcset="
+                    https://placeholder.pics/svg/695x521/6F6F6E/   1x,
+                    https://placeholder.pics/svg/1390x1042/6F6F6E/ 2x
+                  "
                   alt=""
                 />
               </div>
@@ -101,7 +110,10 @@
                   width="695"
                   height="521"
                   src="https://placeholder.pics/svg/695x521/6F6F6E/6F6F6E"
-                  srcset="https://placeholder.pics/svg/695x521/6F6F6E/ x1, https://placeholder.pics/svg/1390x1042/6F6F6E/ x2"
+                  srcset="
+                    https://placeholder.pics/svg/695x521/6F6F6E/   1x,
+                    https://placeholder.pics/svg/1390x1042/6F6F6E/ 2x
+                  "
                   alt=""
                 />
               </div>
@@ -134,7 +146,7 @@
             width="121"
             height="129"
             src="~assets/img/feni-isologo.png"
-            srcset="feni-isologo.png x1, feni-isologo-x2.png x2"
+            srcset="feni-isologo.png 1x, feni-isologo-2x.png 2x"
             alt="FENI"
           />
           <div class="logo-mensaje">Seguinos en facebook</div>

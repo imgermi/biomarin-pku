@@ -26,12 +26,12 @@
   box-sizing: content-box;
   width: 100%; /* 1 */
   @media (min-width: 340px) {
-    max-width: 300px;
+    max-width: calc(100% - 40px);
     padding-left: 20px; /* 3 */
     padding-right: 20px; /* 3 */
   }
-  @media (min-width: 360px) {
-    max-width: 320px;
+  @media (min-width: 550px) {
+    max-width: 510px;
   }
   @include mq($from: tablet) {
     box-sizing: border-box;
