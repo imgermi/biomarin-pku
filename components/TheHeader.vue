@@ -17,7 +17,7 @@
             <img
               width="17"
               height="17"
-              src="https://placeholder.pics/svg/17/000/000"
+              src="~assets/icons/instagram.svg"
               alt="Instagram"
             />
           </a>
@@ -34,7 +34,7 @@
             <img
               width="10"
               height="18"
-              src="https://placeholder.pics/svg/10x18/000/000"
+              src="~assets/icons/facebook.svg"
               alt="Facebook"
             />
           </a>
