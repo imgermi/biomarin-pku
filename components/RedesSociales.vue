@@ -1,6 +1,6 @@
 <template>
-  <ul>
-    <!-- TODO: Cambiar Facebook -->
+  <ul :class="{ 'es-gris': color === 'gris' }">
+    <!-- TODO: Enlace a sitio de Facebook -->
     <li>
       <a
         href="https://www.facebook.com/xxxxxxxx/"
@@ -17,7 +17,7 @@
         />
       </a>
     </li>
-    <!-- TODO: Cambiar instagram -->
+    <!-- TODO: Enlace a sitio de Instagram -->
     <li>
       <a
         href="https://www.instagram.com/xxxxxxxx/"
@@ -37,6 +37,17 @@
   </ul>
 </template>
 
+<script>
+export default {
+  props: {
+    color: {
+      type: String,
+      default: '',
+    },
+  },
+}
+</script>
+
 <style lang="scss" scoped>
 ul {
   display: flex;
@@ -50,7 +61,7 @@ li {
   }
   a {
     display: flex;
-    font-size: 55px;
+    font-size: 48px;
     width: 1em;
     height: 1em;
     justify-content: center;
@@ -73,6 +84,16 @@ li {
   @include mq($from: tablet) {
     li a {
       font-size: 72px;
+    }
+  }
+
+  .es-gris & {
+    a {
+      border-color: #b1b1b1;
+    }
+    img {
+      filter: brightness(0) saturate(100%) invert(82%) sepia(0%) saturate(58%)
+        hue-rotate(170deg) brightness(87%) contrast(94%);
     }
   }
 }

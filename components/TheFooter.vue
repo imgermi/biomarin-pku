@@ -1,96 +1,135 @@
 <template>
-  <footer
-    v-font="[
-      $getFont('Roboto', 200),
-      $getFont('Roboto', 400, 'normal', { selector: 'h2' }),
-    ]"
-    class="pie"
-  >
+  <footer v-font="[$getFont('Roboto', 200)]" class="pie">
     <div class="container">
       <div class="pie-contenedor-interno">
-        <section class="pie-seccion-redes">
-          <h2>Acordate de <u>mí.</u></h2>
-          <RedesSociales />
-        </section>
+        <nav class="menu">
+          <ul v-font="$getFont('Playfair Display', 400)" class="menu-lista">
+            <li>
+              <NuxtLink to="/"> Home </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/la-campana"> La campaña </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/que-es-la-fenilcetonuria">
+                Fenilcetonuria (PKU)
+              </NuxtLink>
+              <ul v-font="$getFont('Roboto', 200)">
+                <li>
+                  <NuxtLink to="/que-es-la-fenilcetonuria">
+                    ¿Qué es la fenilcetonuria (PKU)?
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/diagnostico-de-la-fenilcetonuria">
+                    Diagnóstico
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/tratamiento-y-avances-sobre-la-fenilcetonuria">
+                    Tratamiento y avances
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/la-fenilcetonuria-en-nuestro-pais">
+                    La enfermedad en nuestro país
+                  </NuxtLink>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <NuxtLink to="/fundacion-enhue">Información Útil </NuxtLink>
+              <ul v-font="$getFont('Roboto', 200)">
+                <li>
+                  <NuxtLink to="/fundacion-enhue"> Fundación Enhué </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/centros-de-tratamiento-de-la-fenilcetonuria">
+                    Centros de tratamiento
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/apoyo-al-paciente-con-fenilcetonuria">
+                    Apoyo al paciente
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/consultas-sobre-la-fenilcetonuria">
+                    Consultas
+                  </NuxtLink>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
 
-        <section class="pie-seccion-menu">
-          <h2>Menú</h2>
-          <nav>
-            <ul>
-              <li>
-                <NuxtLink to="/"> Home </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/la-campana"> La campaña </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/que-es-la-fenilcetonuria">
-                  Fenilcetonuria (PKU)
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/fundacion-enhue">Información Útil </NuxtLink>
-              </li>
-            </ul>
-          </nav>
-        </section>
+        <div class="redes">
+          <h2 v-font="$getFont('Playfair Display', 400)">
+            <NuxtLink to="/">Acordate de <u>mí.</u></NuxtLink>
+          </h2>
 
-        <section class="pie-seccion-contacto">
-          <h2>Contact Info</h2>
-          <address
-            class="contacto-caja"
-            itemscope
-            itemtype="http://schema.org/LocalBusiness"
-          >
-            <div class="contacto-item is-ubicacion">
-              <span class="sr-only">Ubicación</span>
-              <!-- TODO: Cambiar dirección -->
-              <span
-                itemprop="address"
-                itemscope
-                itemtype="http://schema.org/PostalAddress"
-              >
-                <span itemprop="streetAddress">Lorem Ipsum 2233</span><br />
-                <span itemprop="addressRegion">Argentina</span>
-              </span>
-            </div>
+          <RedesSociales color="gris" />
 
-            <div>
-              <div class="contacto-item is-telefono">
-                <span class="sr-only">Teléfono</span>
-                <a
-                  itemprop="telephone"
-                  href="tel:1-555-123-4567"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  +1 555 123 4567
-                </a>
-              </div>
+          <div class="logos">
+            <!-- TODO: Enlace al sitio de la fundación Enhué -->
+            <!-- TODO: Logo fundación Enhué 1x -->
+            <a href="" rel="noopener noreferrer" target="_blank">
+              <img
+                width="179"
+                height="51.5"
+                src="~assets/img/logo-fundacion-enhue.png"
+                alt="Fundación Enhué"
+              />
+            </a>
 
-              <div class="contacto-item is-email">
-                <span class="sr-only">Email:</span>
-                <a itemprop="email" href="mailto:info@pku.com">
-                  info@pku.com
-                </a>
-              </div>
-            </div>
-          </address>
-        </section>
+            <!-- TODO: Enlace al sitio de FENI -->
+            <a href="" rel="noopener noreferrer" target="_blank">
+              <img
+                width="48.5"
+                height="52"
+                src="~assets/img/feni-isologo.png"
+                srcset="
+                  ~assets/img/feni-isologo.png    1x,
+                  ~assets/img/feni-isologo-2x.png 2x
+                "
+                alt="FENI"
+              />
+            </a>
+
+            <!-- TODO: Logo de BioMarin. No se puede descargar del XD -->
+            <a
+              href="https://www.biomarin.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                width="188"
+                height="28"
+                src="https://placeholder.pics/svg/188x28/CCC/CCC"
+                alt="BioMarin"
+              />
+            </a>
+          </div>
+        </div>
       </div>
-      <div>
-        <!-- TODO: Agregar enlace a la fundación Enhue -->
-        <a href="" rel="noopener noreferrer" target="_blank">
-          <img
-            class="pie-logo"
-            width="240"
-            height="69"
-            src="~assets/img/logo-fundacion-enhue.png"
-            alt="Fundación Enhué"
-          />
-        </a>
 
-        <p class="pie-legales">Copyright @ 2020 All Rights Reserved.</p>
+      <div class="legales">
+        <p class="legales-copy">Copyright @ 2021 All Rights Reserved.</p>
+
+        <nav id="legales" class="legales-nav">
+          <!-- TODO: Enlace a Términos y Condiciones -->
+          <a href="" target="_blank">Términos y Condiciones</a>
+          <!-- TODO: Enlace a Política de Privacidad -->
+          <a href="" target="_blank">Política de Privacidad</a>
+        </nav>
+
+        <a
+          href="https://www.biomarin.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          www.biomarin.com
+        </a>
       </div>
     </div>
   </footer>
@@ -102,14 +141,14 @@
   font-weight: 200;
   color: #868686;
   background-color: #fbfbfb;
-  padding: 70px 0 60px;
+  padding: 70px 0 30px;
   section {
-    margin: 0 20px 60px 0;
+    margin: 0 20px 20px 0;
   }
   h2 {
-    font-size: 33.5px;
+    font-size: 31.5px;
     font-weight: 400;
-    color: #1d1d1b;
+    color: black;
     margin-bottom: 40px;
   }
   ul {
@@ -130,79 +169,103 @@
   flex-direction: column;
 }
 
-/* Sección: Redes */
-.pie-seccion-redes {
+/* Redes y logos */
+.redes {
   flex-grow: 2;
   h2 {
     font-size: 24.5px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     u {
       text-decoration: underline;
     }
+    a {
+      text-decoration: none;
+    }
   }
-}
-
-/* Sección: Contacto */
-.pie-seccion-contacto {
-  flex-grow: 2;
-  $pieAddressLineHeight: 2.8em;
-  $pieCajaGap: 15px;
-  .contacto-caja {
+  .logos {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    font-style: normal;
-    line-height: $pieAddressLineHeight;
-    > div {
-      flex-basis: calc(50% - #{$pieCajaGap});
-    }
-  }
-  .contacto-item {
-    min-width: 200px;
-    &:not(:last-child) {
-      margin-right: $pieCajaGap;
-    }
-    &.is-ubicacion,
-    &.is-telefono,
-    &.is-email {
-      position: relative;
-      padding-left: 45px;
-      &::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: $pieAddressLineHeight;
-        background: url('https://placeholder.pics/svg/20/DEDEDE/DEDEDE')
-          no-repeat center;
-        background-size: contain;
-        position: absolute;
-        left: 0;
+    align-items: center;
+    margin-top: 40px;
+    a {
+      display: block;
+      margin: 20px 0;
+      &:not(:last-child) {
+        margin-right: 40px;
       }
     }
   }
 }
 
-.pie-logo {
-  margin: 0 0 20px;
+/* Menú */
+.menu-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  > li {
+    font-size: 20px;
+    color: #1a1a1a;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    > a {
+      display: block;
+      margin-bottom: rem(30px);
+    }
+    li {
+      font-size: 12px;
+      font-weight: 200;
+      margin-bottom: rem(24px);
+    }
+  }
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
 }
-.pie-legales {
+
+/* Legales */
+.legales {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid #9b9b9b;
+  margin-top: 2rem;
+  padding: 10px 0;
   color: #6f6f6e;
-  font-size: 21px;
+  font-size: 12px;
+  font-weight: 200;
+  @include mq($from: tablet) {
+    padding-right: 30px;
+  }
+}
+.legales-nav {
+  margin-bottom: 0.7rem;
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+    &:not(:last-child) {
+      &::after {
+        content: '|';
+        display: inline-block;
+        margin: 0 0.6em;
+      }
+    }
+  }
 }
 
 @include mq($from: tablet) {
   .pie-contenedor-interno {
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .pie-seccion-redes {
-    flex-grow: 2;
-  }
-  .pie-seccion-menu {
+  .redes {
     flex-grow: 1;
   }
-  .pie-seccion-contacto {
+  .menu {
     flex-grow: 2;
   }
 }
