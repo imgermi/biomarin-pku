@@ -1,7 +1,13 @@
 <template>
   <div v-font="$getFont('Roboto', 200)" class="menu" data-inclusive-menu>
-    <!-- TODO: Agregar .nuxt-link-active cuando corresponda -->
-    <button ref="btn" class="menu-boton" :data-inclusive-menu-opens="id">
+    <button
+      ref="btn"
+      class="menu-boton"
+      :class="{
+        'nuxt-link-active': rutas.includes($route.name),
+      }"
+      :data-inclusive-menu-opens="id"
+    >
       {{ titulo }}
     </button>
     <div :id="id" class="menu-opciones" data-inclusive-menu-from="left">
@@ -20,6 +26,10 @@ export default {
     },
     titulo: {
       type: String,
+      required: true,
+    },
+    rutas: {
+      type: Array,
       required: true,
     },
   },
@@ -77,12 +87,13 @@ button:focus-visible {
 .menu-boton {
   display: flex !important;
   align-items: center;
-  padding: 2px 0;
+  padding: 0;
+  font-size: 15.5px;
   color: inherit;
   &.nuxt-link-active {
     font-weight: 400;
   }
-  // TODO: Cargar ícono de dropdown
+  // TODO: Cabecera: ícono de dropdown
   &::after {
     content: '';
     display: inline-block;

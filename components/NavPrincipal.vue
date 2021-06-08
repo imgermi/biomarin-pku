@@ -11,7 +11,16 @@
         <NuxtLink to="/la-campana"> La campaña </NuxtLink>
       </li>
       <li>
-        <NavPrincipalMenu id="menu-pku" titulo="Fenilcetonuria (PKU)">
+        <NavPrincipalMenu
+          id="menu-pku"
+          titulo="Fenilcetonuria (PKU)"
+          :rutas="[
+            'que-es-la-fenilcetonuria',
+            'diagnostico-de-la-fenilcetonuria',
+            'tratamiento-y-avances-sobre-la-fenilcetonuria',
+            'la-fenilcetonuria-en-nuestro-pais',
+          ]"
+        >
           <NuxtLink tag="button" to="/que-es-la-fenilcetonuria">
             ¿Qué es la fenilcetonuria (PKU)?
           </NuxtLink>
@@ -30,7 +39,16 @@
         </NavPrincipalMenu>
       </li>
       <li>
-        <NavPrincipalMenu id="menu-info" titulo="Información Útil">
+        <NavPrincipalMenu
+          id="menu-info"
+          titulo="Información Útil"
+          :rutas="[
+            'fundacion-enhue',
+            'centros-de-tratamiento-de-la-fenilcetonuria',
+            'apoyo-al-paciente-con-fenilcetonuria',
+            'consultas-sobre-la-fenilcetonuria',
+          ]"
+        >
           <NuxtLink tag="button" to="/fundacion-enhue">
             Fundación Enhué
           </NuxtLink>
