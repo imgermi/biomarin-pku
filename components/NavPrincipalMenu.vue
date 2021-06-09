@@ -93,13 +93,12 @@ button:focus-visible {
   &.nuxt-link-active {
     font-weight: 400;
   }
-  // TODO: Cabecera: ícono de dropdown
   &::after {
     content: '';
     display: inline-block;
     width: 8px;
-    height: 5.5px;
-    background: url('https://placeholder.pics/svg/8x6/000/000') no-repeat center;
+    height: 5px;
+    background: url('~assets/icons/flecha-abajo.svg') no-repeat center;
     background-size: contain;
     margin-left: 4px;
   }

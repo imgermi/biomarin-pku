@@ -21,12 +21,15 @@
       </div>
     </div>
 
-    <!-- TODO: Imagen 1x de página Fundación Enhué -->
     <img
       width="874"
-      height="703.5"
+      height="704"
       class="imagen-decorativa"
-      src="~assets/img/fundacion-enhue-2x.png"
+      src="~assets/img/fundacion-enhue.png"
+      srcset="
+        ~assets/img/fundacion-enhue.png    1x,
+        ~assets/img/fundacion-enhue-2x.png 2x
+      "
       alt=""
     />
 
@@ -41,15 +44,14 @@
         >
           <div>
             <figure>
-              <!-- TODO: Cargar imagen  -->
               <div class="img-wrapper">
                 <img
                   width="695"
                   height="521"
-                  src="https://placeholder.pics/svg/695x521/6F6F6E/6F6F6E"
+                  src="~assets/img/fundacion-enhue-slide-1.png"
                   srcset="
-                    https://placeholder.pics/svg/695x521/6F6F6E/   1x,
-                    https://placeholder.pics/svg/1390x1042/6F6F6E/ 2x
+                    ~assets/img/fundacion-enhue-slide-1.png    1x,
+                    ~assets/img/fundacion-enhue-slide-1-2x.png 2x
                   "
                   alt=""
                 />
@@ -62,15 +64,14 @@
           </div>
           <div>
             <figure>
-              <!-- TODO: Cargar imagen  -->
               <div class="img-wrapper">
                 <img
                   width="695"
                   height="521"
-                  src="https://placeholder.pics/svg/695x521/6F6F6E/6F6F6E"
+                  src="~assets/img/fundacion-enhue-slide-2.png"
                   srcset="
-                    https://placeholder.pics/svg/695x521/6F6F6E/   1x,
-                    https://placeholder.pics/svg/1390x1042/6F6F6E/ 2x
+                    ~assets/img/fundacion-enhue-slide-2.png    1x,
+                    ~assets/img/fundacion-enhue-slide-2-2x.png 2x
                   "
                   alt=""
                 />
@@ -83,15 +84,14 @@
           </div>
           <div>
             <figure>
-              <!-- TODO: Cargar imagen  -->
               <div class="img-wrapper">
                 <img
                   width="695"
                   height="521"
-                  src="https://placeholder.pics/svg/695x521/6F6F6E/6F6F6E"
+                  src="~assets/img/fundacion-enhue-slide-3.png"
                   srcset="
-                    https://placeholder.pics/svg/695x521/6F6F6E/   1x,
-                    https://placeholder.pics/svg/1390x1042/6F6F6E/ 2x
+                    ~assets/img/fundacion-enhue-slide-3.png    1x,
+                    ~assets/img/fundacion-enhue-slide-3-2x.png 2x
                   "
                   alt=""
                 />
@@ -104,15 +104,14 @@
           </div>
           <div>
             <figure>
-              <!-- TODO: Cargar imagen  -->
               <div class="img-wrapper">
                 <img
                   width="695"
                   height="521"
-                  src="https://placeholder.pics/svg/695x521/6F6F6E/6F6F6E"
+                  src="~assets/img/fundacion-enhue-slide-4.png"
                   srcset="
-                    https://placeholder.pics/svg/695x521/6F6F6E/   1x,
-                    https://placeholder.pics/svg/1390x1042/6F6F6E/ 2x
+                    ~assets/img/fundacion-enhue-slide-4.png    1x,
+                    ~assets/img/fundacion-enhue-slide-4-2x.png 2x
                   "
                   alt=""
                 />

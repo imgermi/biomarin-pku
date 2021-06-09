@@ -4,6 +4,7 @@
       Escribinos tu consulta
     </CButton>
     <!-- TODO: Agregar botón para compartir por WhatsApp -->
+    <!-- TODO: Botón WhatsApp: texto predefinido y número al que se enviaría el mensaje -->
   </div>
 </template>
 

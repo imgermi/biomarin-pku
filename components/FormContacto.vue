@@ -34,7 +34,7 @@
             name="consentimiento"
             value="1"
           />
-          <!-- TODO: Cambiar términos y condiciones de form por unos en español -->
+          <!-- TODO: Formulario: Términos y condiciones en español -->
           <label for="consentimiento">
             Ao clicar nesta caixa ao lado e submeter minhas informações no botão
             abaixo, eu confirmo que tenho pelo menos 18 anos de idade; e

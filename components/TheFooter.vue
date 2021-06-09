@@ -72,12 +72,15 @@
 
           <div class="logos">
             <!-- TODO: Enlace al sitio de la fundación Enhué -->
-            <!-- TODO: Logo fundación Enhué 1x -->
             <a href="" rel="noopener noreferrer" target="_blank">
               <img
-                width="179"
-                height="51.5"
-                src="~assets/img/logo-fundacion-enhue.png"
+                width="180"
+                height="52"
+                src="~assets/img/fundacion-enhue-logo.png"
+                srcset="
+                  ~assets/img/fundacion-enhue-logo.png    1x,
+                  ~assets/img/fundacion-enhue-logo-2x.png 2x
+                "
                 alt="Fundación Enhué"
               />
             </a>
@@ -96,7 +99,6 @@
               />
             </a>
 
-            <!-- TODO: Logo de BioMarin. No se puede descargar del XD -->
             <a
               href="https://www.biomarin.com"
               rel="noopener noreferrer"
@@ -105,7 +107,7 @@
               <img
                 width="188"
                 height="28"
-                src="https://placeholder.pics/svg/188x28/CCC/CCC"
+                src="~assets/img/biomarin-logo.svg"
                 alt="BioMarin"
               />
             </a>

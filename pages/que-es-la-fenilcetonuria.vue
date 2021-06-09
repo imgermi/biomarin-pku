@@ -63,7 +63,14 @@
       </ul>
     </div>
 
-    <!-- TODO: PKU: Imagen con texto decorativo "Acordate de mi" -->
+    <div class="texto-decorativo">
+      <img
+        width="659"
+        height="139"
+        src="~assets/img/acordate-de-mi.svg"
+        alt="Acordate de mi"
+      />
+    </div>
 
     <SeccionContacto />
   </div>
@@ -150,6 +157,16 @@ ul.has-circulos {
       left: 0;
       top: calc(0.6em - 5.25px);
     }
+  }
+}
+
+.texto-decorativo {
+  height: 139px;
+  margin: 5rem 0;
+  position: relative;
+  img {
+    position: absolute;
+    right: 0;
   }
 }
 </style>

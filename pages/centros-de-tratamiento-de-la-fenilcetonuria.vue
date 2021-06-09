@@ -57,7 +57,7 @@
         </Tab>
       </Tabs>
 
-      <!-- TODO: cambiar dirección de email de centros de tratamiento -->
+      <!-- TODO: Centros de tratamiento: Email de contacto para pedir ser incluido en el listado -->
       <p v-font="$getFont('Roboto', 200, 'italic')" class="nota">
         Los médicos de Encontrá tu Doctor en Acordate de Mí se registran de
         forma voluntaria y son totalmente responsables de la información

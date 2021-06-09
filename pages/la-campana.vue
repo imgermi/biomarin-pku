@@ -42,15 +42,28 @@
             </p>
           </section>
         </div>
-        <div class="img-wrapper">
-          <img
-            width="616"
-            height="710"
-            src="~assets/img/campania.png"
-            srcset="~assets/img/campania.png 1x, ~assets/img/campania-2x.png 2x"
-            alt=""
-          />
-          <!-- TODO: La campaña: imagen con texto decorativo "Acordate de mí" -->
+
+        <div class="contenedor-imagenes">
+          <div class="img-wrapper">
+            <img
+              width="616"
+              height="710"
+              src="~assets/img/campania.png"
+              srcset="
+                ~assets/img/campania.png    1x,
+                ~assets/img/campania-2x.png 2x
+              "
+              alt=""
+            />
+          </div>
+          <div class="texto-decorativo">
+            <img
+              width="659"
+              height="139"
+              src="~assets/img/acordate-de-mi.svg"
+              alt="Acordate de mi"
+            />
+          </div>
         </div>
       </div>
 
@@ -99,7 +112,7 @@
           <div class="apoyo apoyo--instagram">
             <div>
               Seguinos en el Instagram de <br />la campaña
-              <!-- TODO: Agregar Enlace a Instagram de la campaña -->
+              <!-- TODO: Enlace a Instagram de la campaña -->
               <a
                 v-font="$getFont('Roboto', 500)"
                 href="https://www.instagram.com/acordatedemi/"
@@ -153,14 +166,20 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  .img-wrapper {
-    flex: 1 0 auto;
+  > div {
+    flex: 1 1 auto;
+    width: 60%;
+  }
+  .contenedor-imagenes {
+    width: 40%;
     margin: 0 0 10rem;
+  }
+  .img-wrapper {
+    width: calc(100% - 14px);
   }
   @include mq($from: tablet) {
     flex-direction: row;
-    .img-wrapper {
-      max-width: 40%;
+    .contenedor-imagenes {
       margin: 10rem 0 0 1rem;
     }
   }
@@ -182,6 +201,21 @@ p {
 }
 section {
   margin-bottom: 10rem;
+}
+
+.texto-decorativo {
+  margin: 4rem 0;
+  img {
+    position: absolute;
+    right: 0;
+    max-width: calc(40vw - 4rem);
+    height: auto;
+  }
+  @media (min-width: 1350px) {
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .causa {

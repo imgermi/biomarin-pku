@@ -19,12 +19,15 @@
         exposición a la dieta proteica, es decir, a la lactancia materna.
       </p>
 
-      <!-- TODO: Cambiar imagen de Diagnóstico -->
       <div class="img-wrapper">
         <img
-          width="850"
-          height="604"
-          src="https://placeholder.pics/svg/850x604/CCC/CCC"
+          width="851"
+          height="605"
+          src="~assets/img/diagnostico-pku.png"
+          srcset="
+            ~assets/img/diagnostico-pku.png    1x,
+            ~assets/img/diagnostico-pku-2x.png 2x
+          "
           alt=""
         />
       </div>
