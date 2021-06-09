@@ -87,9 +87,15 @@ button:focus-visible {
 .menu-boton {
   display: flex !important;
   align-items: center;
+  text-align: center;
   padding: 0;
-  font-size: 15.5px;
+  margin: 1rem 0 0.5rem;
+  font-size: inherit;
   color: inherit;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
   &.nuxt-link-active {
     font-weight: 400;
   }
@@ -106,42 +112,49 @@ button:focus-visible {
 .menu-opciones {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: auto;
-  padding: 0 0.2em;
-  border: 1px solid #000;
-  border-right: 0;
-  border-bottom: 0;
+  background: #f5f5f5;
+  border-radius: 9px;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.02);
 
   overflow: hidden;
-  // opacity: 1;
+  opacity: 1;
   transition: visibility 0s ease, max-height 500ms ease, opacity 500ms ease;
-  max-height: 80em;
   /* magic number for max-height = enough height */
+  max-height: 80em;
   visibility: visible;
   transition-delay: 0s;
 
   &[hidden] {
     max-height: 0;
-    // opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    transition-delay: 2s, 0s, 0s;
+    transition-delay: 500ms, 0s, 0s;
   }
   button {
     width: max-content;
-    font-size: 9.5px;
-    padding: 0 0.1em;
-    margin: 0.4em 0;
+    font-size: 14px;
+    padding: 0 1rem;
+    margin: 0.5em 0;
     line-height: 1.2;
     border-radius: 2px;
-    &:focus-visible {
-      outline: 0;
-      background-color: rgba(187, 171, 148, 0.6);
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:first-child {
+      padding-top: 1rem;
+    }
+    &:last-child {
+      padding-bottom: 1rem;
     }
   }
 }
 
 @include mq($from: desktop) {
+  .menu-boton {
+    text-align: left;
+    margin: 0 0 0.5rem;
+  }
   .menu-opciones {
     position: absolute;
   }

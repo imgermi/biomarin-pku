@@ -70,13 +70,9 @@
   </nav>
 </template>
 
-<script>
-export default {}
-</script>
-
 <style lang="scss" scoped>
 .nav-ppal {
-  font-size: 15.5px;
+  font-size: 18px;
   width: 100%;
   ul {
     display: flex;
@@ -87,11 +83,13 @@ export default {}
   li {
     // Evita que se note espacio dejado por el contenido oculto con visibility: hidden
     min-height: 2.5em;
-    margin-right: 20px;
   }
   a {
     color: inherit;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   a.nuxt-link-active {
     font-weight: 400;
@@ -105,9 +103,16 @@ export default {}
     ul {
       flex-direction: row;
       justify-content: flex-end;
+      align-items: center;
     }
     li {
       min-height: auto;
+      margin-right: 20px;
+      // Acomoda alineación vertical de enlace sin submenú
+      > a {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }
