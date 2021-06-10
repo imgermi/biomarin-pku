@@ -63,7 +63,7 @@ export default {
   .imagen {
     flex: 1;
   }
-  @include mq($from: desktop) {
+  @include mq($from: tablet) {
     flex-direction: row;
     align-items: center;
   }
@@ -102,7 +102,12 @@ p {
 }
 @include mq($from: tablet) {
   .imagen {
-    max-width: rem(434px);
+    max-width: 33%;
+    margin-right: 3rem;
+  }
+}
+@include mq($from: desktop) {
+  .imagen {
     margin-right: 83px;
   }
 }

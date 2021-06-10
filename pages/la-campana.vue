@@ -277,8 +277,8 @@ section {
   &::before {
     content: '';
     display: block;
-    width: 10rem;
-    height: 10rem;
+    width: 100px;
+    height: 100px;
     margin-right: 0.9em;
     background-repeat: no-repeat;
     background-position: center;
@@ -299,8 +299,12 @@ section {
       text-decoration: underline;
     }
   }
-  @include mq($from: desktop) {
+  @include mq($from: tablet) {
     justify-content: center;
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 

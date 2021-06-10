@@ -191,11 +191,7 @@ p {
   position: relative;
   margin-top: 3rem;
   @media (min-width: 500px) {
-    box-sizing: content-box;
-    padding: 4rem;
-  }
-  @include mq($from: tablet) {
-    box-sizing: border-box;
+    padding: 5rem;
   }
 }
 figure {
