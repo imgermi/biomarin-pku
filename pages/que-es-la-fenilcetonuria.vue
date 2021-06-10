@@ -173,7 +173,7 @@ ul.has-circulos {
   margin: 5rem 0;
   position: relative;
   img {
-    max-width: calc(100vw - 40px);
+    max-width: calc(80vw);
     position: absolute;
     right: 0;
   }

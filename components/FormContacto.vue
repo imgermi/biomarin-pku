@@ -94,7 +94,9 @@ p {
 }
 
 form {
-  max-width: rem(550px);
+  @include mq($from: tablet) {
+    max-width: rem(550px);
+  }
 }
 
 .form-control {

@@ -228,22 +228,22 @@
 /* Legales */
 .legales {
   display: flex;
-
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   border-top: 1px solid #9b9b9b;
   margin-top: 2rem;
-  padding: 10px 0;
+  padding: 1rem 0;
   color: #6f6f6e;
   font-size: 12px;
   font-weight: 200;
+  line-height: 1.2;
   @include mq($from: tablet) {
     padding-right: 30px;
   }
 }
 .legales-nav {
-  margin-bottom: 1.2rem;
+  margin-right: 1em;
   a {
     &:hover {
       text-decoration: underline;

@@ -209,13 +209,15 @@ section {
 .texto-decorativo {
   margin: 4rem 0;
   img {
-    position: absolute;
-    right: 0;
-    max-width: calc(40vw - 4rem);
+    max-width: 70vw;
     height: auto;
-  }
-  @media (min-width: 1350px) {
-    img {
+    margin-left: auto;
+    @include mq($from: tablet) {
+      max-width: calc(40vw - 4rem);
+      position: absolute;
+      right: 0;
+    }
+    @media (min-width: 1350px) {
       max-width: 100%;
     }
   }

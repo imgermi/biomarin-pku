@@ -136,14 +136,11 @@ li {
   flex: 0 1 auto;
   width: 100%;
   margin: 1.2rem 0;
-  @media (min-width: 400px) {
-    max-width: rem(486px);
-  }
-  @include mq($from: tablet) {
+  @include mq($from: desktop) {
     margin: rem(15px) rem(20px) rem(15px) 0;
     width: calc(50% - 60px);
   }
-  @include mq($from: desktop) {
+  @include mq($from: wide) {
     width: calc(33% - 60px);
   }
 }
