@@ -142,20 +142,15 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import '~assets/scss/components/hamburguesa';
-</style>
-
 <style lang="scss" scoped>
 .cabecera {
-  padding: 30px 0 20px;
+  padding: 20px 0;
   color: #000;
   background: transparent;
   .container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-sizing: border-box;
   }
 }
 
@@ -166,16 +161,27 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   img {
-    height: 2rem;
+    height: 25px;
     width: auto;
-    margin-right: 1rem;
+    margin-right: 10px;
   }
 }
 .titulo {
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 400;
   text-decoration: none;
 }
+
+// https://jonsuh.com/hamburgers/
+$hamburger-padding-y: 0.5em;
+$hamburger-padding-x: 0.5em;
+$hamburger-layer-width: 25px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 5px;
+$hamburger-types: (elastic);
+
+@import 'hamburgers/_sass/hamburgers/hamburgers.scss';
+
 .overlay-open {
   margin-left: auto;
 }
@@ -202,6 +208,20 @@ export default {
   }
 }
 
+@media (min-width: 360px) {
+  .cabecera {
+    padding: 30px 0 20px;
+  }
+  .seccion-a {
+    img {
+      height: 2.5rem;
+      // margin-right: 1.2rem;
+    }
+  }
+  .titulo {
+    font-size: 1.5rem;
+  }
+}
 @include mq($from: desktop) {
   .cabecera {
     padding: 50px 0 20px;
@@ -273,11 +293,11 @@ export default {
   /* Overlay closing cross */
   .overlay .overlay-close {
     display: block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 25px;
+    height: 25px;
     position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
+    right: 25px;
+    top: 25px;
     overflow: hidden;
     border: none;
     background: url('~assets/icons/cruz.png') no-repeat center center;

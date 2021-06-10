@@ -93,6 +93,8 @@ button:focus-visible {
   font-size: inherit;
   color: inherit;
   cursor: pointer;
+  // Centra horizontalmente. Queremos centrar el texto, sin tener en cuenta la flecha.
+  transform: translateX(8px);
   &:hover {
     text-decoration: underline;
   }

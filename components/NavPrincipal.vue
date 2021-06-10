@@ -82,7 +82,7 @@
   }
   li {
     // Evita que se note espacio dejado por el contenido oculto con visibility: hidden
-    min-height: 2.5em;
+    min-height: 3em;
   }
   a {
     color: inherit;

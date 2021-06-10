@@ -135,8 +135,10 @@ ul {
 li {
   flex: 0 1 auto;
   width: 100%;
-  max-width: rem(486px);
-  margin: rem(15px) 0;
+  margin: 1.2rem 0;
+  @media (min-width: 400px) {
+    max-width: rem(486px);
+  }
   @include mq($from: tablet) {
     margin: rem(15px) rem(20px) rem(15px) 0;
     width: calc(50% - 60px);
@@ -154,10 +156,10 @@ li {
   border-radius: 21px;
   box-shadow: 9px 9px 15px 0px rgba(0, 0, 0, 0.25);
   header {
+    font-size: 1.5rem;
     margin-bottom: 0.8rem;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.6rem;
     border-bottom: 1px solid #00000082;
-    font-size: rem(25.3px);
     h3 {
       margin: 0;
     }
@@ -167,13 +169,13 @@ li {
     }
   }
   dt {
-    font-size: rem(25.3px);
+    font-size: 1.5rem;
     display: inline-block;
     margin-bottom: 0.3rem;
   }
   dd {
     display: inline;
-    font-size: rem(20px);
+    font-size: 1.3rem;
     font-weight: 200;
     margin-left: 0.8em;
   }
@@ -198,7 +200,7 @@ li {
 }
 
 .nota {
-  font-size: rem(20px);
+  font-size: 1.3rem;
   line-height: 1.3;
   font-weight: 200;
   font-style: italic;

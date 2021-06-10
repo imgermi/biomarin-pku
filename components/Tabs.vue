@@ -182,7 +182,7 @@ export default {
   li {
     width: 1.9em;
     height: 1.9em;
-    font-size: rem(31px);
+    font-size: 2rem;
     border: 1px solid black;
     border-radius: 50%;
     margin: 0 rem(22px) rem(22px) 0;

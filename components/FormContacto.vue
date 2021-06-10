@@ -24,7 +24,7 @@
 
         <div class="form-control">
           <label for="edad">Edad:</label>
-          <input id="edad" type="text" name="edad" />
+          <input id="edad" type="text" pattern="[0-9]+" name="edad" />
         </div>
 
         <div class="form-checkbox">

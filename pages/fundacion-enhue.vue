@@ -21,18 +21,6 @@
       </div>
     </div>
 
-    <img
-      width="874"
-      height="704"
-      class="imagen-decorativa"
-      src="~assets/img/fundacion-enhue.png"
-      srcset="
-        ~assets/img/fundacion-enhue.png    1x,
-        ~assets/img/fundacion-enhue-2x.png 2x
-      "
-      alt=""
-    />
-
     <div class="container slider">
       <ClientOnly>
         <VueTinySlider
@@ -145,7 +133,10 @@
             width="121"
             height="129"
             src="~assets/img/feni-isologo.png"
-            srcset="feni-isologo.png 1x, feni-isologo-2x.png 2x"
+            srcset="
+              ~assets/img/feni-isologo.png    1x,
+              ~assets/img/feni-isologo-2x.png 2x
+            "
             alt="FENI"
           />
           <div class="logo-mensaje">Seguinos en facebook</div>
@@ -188,23 +179,10 @@ export default {
     padding-right: 4rem;
   }
 }
-h1 {
-  margin-bottom: 0.2em;
-}
 p {
   font-size: rem(30px);
   font-weight: 200;
   margin-top: 0;
-}
-.imagen-decorativa {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 4rem 0 0 4rem;
-  box-sizing: border-box;
-  @include mq($from: desktop) {
-    display: none;
-  }
 }
 
 // SLIDER
@@ -224,17 +202,17 @@ figure {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0;
+  // Evita recortar el img-wrapper
+  margin: 7px;
 }
 .img-wrapper {
   flex: 1 0 auto;
-  width: 100%;
-  margin-right: 50px;
 }
 figcaption {
   flex: 1 1 auto;
   font-size: rem(30px);
   font-weight: 200;
+  margin-top: 1rem;
 }
 @include mq($from: desktop) {
   .slider {
@@ -287,23 +265,17 @@ a.logo {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  margin: 0 0 1.5rem;
+  margin: 0 0 3rem;
   img {
-    height: rem(125px);
+    height: 7rem;
     width: auto;
-  }
-  @include mq($from: tablet) {
-    margin: 0 1rem;
-  }
-  @include mq($from: desktop) {
-    margin: 0 2rem;
   }
 }
 .logo-mensaje {
-  padding: rem(12px) rem(15px);
-  margin-left: rem(25px);
+  font-size: 1.3rem;
+  padding: 0.75em 1em;
+  margin-left: 1.2em;
   border-radius: 9px;
-  font-size: rem(19px);
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;

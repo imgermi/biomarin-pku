@@ -215,9 +215,9 @@
       margin-bottom: rem(30px);
     }
     li {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 200;
-      margin-bottom: rem(24px);
+      margin-bottom: rem(26px);
     }
   }
   @include mq($from: tablet) {
@@ -243,7 +243,7 @@
   }
 }
 .legales-nav {
-  margin-bottom: 0.7rem;
+  margin-bottom: 1.2rem;
   a {
     &:hover {
       text-decoration: underline;

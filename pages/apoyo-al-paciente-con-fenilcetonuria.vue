@@ -75,8 +75,7 @@ export default {
 .imagen {
   width: 100%;
   height: auto;
-  max-width: rem(434px);
-  margin-right: 83px;
+  max-width: 90%;
 }
 
 .texto {
@@ -96,9 +95,15 @@ p {
   }
   small {
     display: block;
-    font-size: rem(20px);
+    font-size: 1.3rem;
     font-weight: 400;
     color: $brand-color;
+  }
+}
+@include mq($from: tablet) {
+  .imagen {
+    max-width: rem(434px);
+    margin-right: 83px;
   }
 }
 </style>
