@@ -125,6 +125,11 @@ export default {
       isOpen: false,
     }
   },
+  watch: {
+    $route() {
+      this.isOpen = false
+    },
+  },
   methods: {
     toggleOverlay() {
       if (this.isOpen) {
