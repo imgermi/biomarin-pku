@@ -9,7 +9,7 @@
     <div>
       <form
         v-font="[$getFont('Roboto', 200)]"
-        method="POST"
+        method="GET"
         action="thank-you-page"
       >
         <div class="form-control">
