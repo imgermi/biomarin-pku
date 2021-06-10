@@ -1,3 +1,5 @@
+import faviconDescription from './config/faviconDescription.json'
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -243,7 +245,15 @@ export default {
         themeColor: process.env.THEME_COLOR,
       },
     ],
+
+    'nuxt-rfg-icon',
   ],
+
+  // Docs: https://www.npmjs.com/package/nuxt-favicons
+  'rfg-icon': {
+    masterPicture: 'assets/img/favicon.png',
+    rfg: faviconDescription,
+  },
 
   axios: {
     debug: false,

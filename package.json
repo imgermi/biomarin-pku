@@ -17,6 +17,7 @@
     "inclusive-menu-button": "^0.1.4",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.15.6",
+    "nuxt-rfg-icon": "^0.6.4",
     "nuxt-social-meta": "^0.0.5",
     "nuxt-speedkit": "^1.2.5",
     "sass-mq": "^5.0.1",
