@@ -35,7 +35,16 @@
   }
   @include mq($from: tablet) {
     box-sizing: border-box;
-    max-width: $max-width;
+    max-width: 720px;
+  }
+  @include mq($from: desktop) {
+    max-width: 960px;
+  }
+  @include mq($from: wide) {
+    max-width: 1140px;
+  }
+  @include mq($from: full) {
+    max-width: 1320px;
   }
 }
 

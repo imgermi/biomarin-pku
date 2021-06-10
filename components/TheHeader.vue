@@ -165,8 +165,6 @@ export default {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  // Centra items
-  transform: translateY(0.25rem);
   img {
     height: 2rem;
     width: auto;
@@ -234,12 +232,17 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // Centra items
+    transform: translateY(0.25rem);
   }
 
   .redes {
     display: flex;
     justify-content: flex-end;
     margin: 0 0 0 3rem;
+    li img {
+      height: auto;
+    }
   }
 }
 

@@ -20,15 +20,18 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 
-  font-size: 14px;
+  font-size: 10px;
   @include mq($from: tablet) {
-    font-size: 16px;
+    font-size: 12px;
   }
   @include mq($from: desktop) {
-    font-size: 18px;
+    font-size: 14px;
   }
   @include mq($from: wide) {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  @include mq($from: full) {
+    font-size: 18px;
   }
 }
 
