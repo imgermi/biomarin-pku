@@ -15,7 +15,9 @@
             calidad de vida de estos pacientes y sus familiares.
           </p>
 
-          <section>
+          <section
+            v-font="$getFont('Roboto', 200, 'normal', { selector: 'p' })"
+          >
             <h2>Acordate de mí</h2>
 
             <p>
@@ -111,7 +113,8 @@
         <div class="apoyo-inner">
           <div class="apoyo apoyo--instagram">
             <div>
-              Seguinos en el Instagram de <br />la campaña
+              Seguinos en el Instagram de <br class="is-hidden-mobile" />la
+              campaña
               <!-- TODO: Enlace a Instagram de la campaña -->
               <a
                 v-font="$getFont('Roboto', 500)"
@@ -124,7 +127,7 @@
           </div>
 
           <div class="apoyo apoyo--compartir">
-            Interectuá con nuestro contenido<br />
+            Interectuá con nuestro contenido<br class="is-hidden-mobile" />
             y compartilo en tus redes sociales.
           </div>
         </div>
@@ -166,19 +169,19 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  > div {
-    flex: 1 1 auto;
-    width: 60%;
-  }
-  .contenedor-imagenes {
-    width: 40%;
-    margin: 0 0 10rem;
-  }
   .img-wrapper {
     width: calc(100% - 14px);
   }
   @include mq($from: tablet) {
     flex-direction: row;
+    > div {
+      flex: 1 1 auto;
+      width: 60%;
+    }
+    .contenedor-imagenes {
+      width: 40%;
+      margin: 0 0 10rem;
+    }
     .contenedor-imagenes {
       margin: 10rem 0 0 1rem;
     }
@@ -219,11 +222,12 @@ section {
 }
 
 .causa {
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 4rem auto;
   &:not(:last-child) {
     padding-bottom: 2rem;
     border-bottom: 1px solid #00000052;
@@ -233,8 +237,13 @@ section {
     font-size: rem(35px);
     text-align: center;
   }
+  img {
+    width: 100%;
+    height: auto;
+  }
   @include mq($from: tablet) {
     flex-direction: row;
+    max-width: 100%;
     p {
       text-align: left;
     }
@@ -255,19 +264,19 @@ section {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 8rem 0;
+  margin: 7rem 0;
 }
 .apoyo {
   display: flex;
   align-items: center;
   font-size: rem(35px);
   font-weight: 200;
-  margin: 0 1em 2.5em 0;
+  margin: 0 1em 2em 0;
   &::before {
     content: '';
     display: block;
-    width: 87px;
-    height: 87px;
+    width: 10rem;
+    height: 10rem;
     margin-right: 0.9em;
     background-repeat: no-repeat;
     background-position: center;

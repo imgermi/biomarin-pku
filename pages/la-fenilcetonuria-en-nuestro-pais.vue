@@ -87,9 +87,9 @@ h1 {
     flex-direction: column-reverse;
     padding: 0;
     img {
-      width: 100%;
+      width: 70%;
       height: auto;
-      margin-top: 2rem;
+      margin: 4rem auto;
     }
   }
 }
@@ -98,7 +98,7 @@ h1 {
   margin: 3em auto;
 }
 p {
-  font-size: rem(30px);
+  font-size: 1.6rem;
   font-weight: 200;
   text-align: center;
   b {
@@ -118,7 +118,7 @@ p {
   }
 }
 .destacado {
-  font-size: rem(75px);
+  font-size: 3.5rem;
   line-height: 1.1;
   font-weight: 400;
 }

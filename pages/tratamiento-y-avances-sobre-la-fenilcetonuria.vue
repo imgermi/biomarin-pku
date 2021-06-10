@@ -64,9 +64,10 @@ export default {
 
 <style lang="scss" scoped>
 h2 {
-  font-size: 42px;
+  font-size: rem(65px);
   line-height: 1.1;
   font-weight: 400;
+  margin: 1em 0 0.5em;
 }
 p,
 li {
@@ -96,6 +97,7 @@ li {
 }
 small {
   display: block;
+  font-size: 1em;
   max-width: rem(760px);
   color: white;
   font-style: italic;

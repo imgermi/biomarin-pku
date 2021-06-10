@@ -124,8 +124,8 @@ ul.has-flechas {
     &::before {
       content: '';
       display: block;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       background: url('~assets/icons/slider-arrow-right.svg') no-repeat center;
       background-size: contain;
       position: absolute;
@@ -133,6 +133,14 @@ ul.has-flechas {
     }
     strong {
       font-weight: 500;
+    }
+  }
+  @include mq($from: tablet) {
+    > li {
+      &::before {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }
@@ -165,6 +173,7 @@ ul.has-circulos {
   margin: 5rem 0;
   position: relative;
   img {
+    max-width: calc(100vw - 40px);
     position: absolute;
     right: 0;
   }

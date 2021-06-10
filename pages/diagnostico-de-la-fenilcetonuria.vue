@@ -65,10 +65,10 @@ h1 {
   }
 }
 h2 {
-  font-size: rem(75px);
+  font-size: rem(65px);
   text-align: center;
   line-height: 1.1;
-  margin-bottom: 3rem;
+  margin: 1em 0 3rem;
 }
 p {
   font-size: rem(30px);
