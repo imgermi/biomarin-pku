@@ -21,7 +21,6 @@ export default {
     htmlAttrs: {
       lang: 'es',
     },
-    // TODO: Imagen 512x512.png para generar las distintas versiones del favicon
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

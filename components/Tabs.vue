@@ -211,5 +211,12 @@ export default {
     justify-content: flex-end;
     margin-right: 7rem;
   }
+  @include mq($from: desktop) {
+    justify-content: flex-end;
+    margin-right: 7rem;
+    li {
+      font-size: 1.5rem;
+    }
+  }
 }
 </style>

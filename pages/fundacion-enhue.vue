@@ -116,8 +116,12 @@
 
     <div class="container">
       <div class="contenedor-logos">
-        <!-- TODO: Enlace a sitio de la Fundación Enhué -->
-        <a class="logo logo--enhue">
+        <a
+          href="https://www.fundacionenhue.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="logo logo--enhue"
+        >
           <img
             width="113"
             height="123"
@@ -166,7 +170,7 @@ export default {
     background-image: url('~assets/img/fundacion-enhue-2x.png');
     background-repeat: no-repeat;
     background-position: 55vw 200px;
-    background-size: 45% auto;
+    background-size: 37% auto;
   }
 }
 @import 'tiny-slider/src/tiny-slider';
@@ -219,7 +223,11 @@ figcaption {
     align-items: center;
   }
   .img-wrapper {
-    width: 50%;
+    width: calc(50% - 14px);
+  }
+  figcaption {
+    margin-left: 2rem;
+    margin-top: 0;
   }
 }
 // TODO: Mostrar controles en mobile
@@ -247,7 +255,7 @@ figcaption {
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50px);
+    transform: translateY(-50%);
     margin-top: 0;
   }
 }
@@ -266,6 +274,13 @@ a.logo {
     height: 7rem;
     width: auto;
   }
+  @include mq($from: desktop) {
+    margin-right: 2rem;
+    img {
+      height: 5rem;
+      width: auto;
+    }
+  }
 }
 .logo-mensaje {
   font-size: 1.3rem;
@@ -283,6 +298,9 @@ a.logo {
     color: white;
     background-color: #482a6d;
     border: 1px solid black;
+  }
+  @include mq($from: desktop) {
+    font-size: 1rem;
   }
 }
 </style>

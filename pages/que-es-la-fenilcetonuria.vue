@@ -177,5 +177,8 @@ ul.has-circulos {
     position: absolute;
     right: 0;
   }
+  @include mq($from: tablet) {
+    max-width: 500px;
+  }
 }
 </style>

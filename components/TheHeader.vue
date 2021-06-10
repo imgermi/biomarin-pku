@@ -243,7 +243,7 @@ $hamburger-types: (elastic);
       margin-right: 26px;
     }
     img {
-      height: auto;
+      height: a3remuto;
     }
   }
   .titulo {
@@ -264,8 +264,15 @@ $hamburger-types: (elastic);
   .redes {
     display: flex;
     justify-content: flex-end;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 2rem;
     li img {
+      height: auto;
+    }
+  }
+}
+@include mq($from: wide) {
+  .seccion-a {
+    img {
       height: auto;
     }
   }

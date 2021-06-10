@@ -61,6 +61,8 @@ h1 {
 }
 .inner-container {
   @include mq($from: desktop) {
+    width: 80%;
+    margin: 0 auto;
     padding: 4rem 3rem 0;
   }
 }
@@ -80,6 +82,9 @@ p {
 }
 .img-wrapper {
   margin-top: 3rem;
+  @include mq($from: desktop) {
+    max-width: 75%;
+  }
 }
 .nota {
   display: block;

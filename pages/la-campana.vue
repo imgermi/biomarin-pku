@@ -180,19 +180,16 @@ export default {
     }
     .contenedor-imagenes {
       width: 40%;
-      margin: 0 0 10rem;
-    }
-    .contenedor-imagenes {
-      margin: 10rem 0 0 1rem;
+      margin: 10rem 0 0 4rem;
     }
   }
 }
 
 h2 {
-  font-size: rem(50px);
+  font-size: 2.2rem;
   font-weight: 400;
   color: $brand-color;
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
 }
 p {
   font-size: rem(30px);
@@ -218,7 +215,7 @@ section {
       right: 0;
     }
     @media (min-width: 1350px) {
-      max-width: 100%;
+      max-width: 500px;
     }
   }
 }
@@ -229,9 +226,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4rem auto;
+  margin: 0 auto;
+  padding: 2rem 0;
   &:not(:last-child) {
-    padding-bottom: 2rem;
     border-bottom: 1px solid #00000052;
   }
   p {
@@ -240,6 +237,7 @@ section {
     text-align: center;
   }
   img {
+    max-width: 412px;
     width: 100%;
     height: auto;
   }
@@ -267,6 +265,9 @@ section {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 7rem 0;
+  @include mq($from: tablet) {
+    justify-content: space-around;
+  }
 }
 .apoyo {
   display: flex;
@@ -300,10 +301,10 @@ section {
     }
   }
   @include mq($from: tablet) {
-    justify-content: center;
+    font-size: 1.5rem;
     &::before {
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
     }
   }
 }

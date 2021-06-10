@@ -82,6 +82,7 @@ h1 {
   color: $brand-color;
 }
 .inner-container {
+  margin-top: 4rem;
   &.con-imagen {
     display: flex;
     flex-direction: column-reverse;
@@ -109,6 +110,7 @@ p {
     font-weight: 700;
     color: $brand-color;
     display: block;
+    padding-top: 0.3em;
   }
   small {
     font-size: rem(25px);
@@ -134,12 +136,9 @@ p {
         margin-top: 0;
       }
       .texto {
-        margin-top: 8rem;
+        margin-top: 12rem;
       }
     }
-  }
-  .destacado {
-    font-size: 32px;
   }
 }
 </style>

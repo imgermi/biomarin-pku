@@ -98,7 +98,7 @@ li {
 small {
   display: block;
   font-size: 1em;
-  max-width: rem(760px);
+  max-width: rem(900px);
   color: white;
   font-style: italic;
   background-color: $brand-color;

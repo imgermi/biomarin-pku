@@ -71,8 +71,11 @@
           <RedesSociales color="gris" />
 
           <div class="logos">
-            <!-- TODO: Enlace al sitio de la fundación Enhué -->
-            <a href="" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://www.fundacionenhue.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 width="180"
                 height="52"

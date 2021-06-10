@@ -141,7 +141,7 @@ li {
     width: calc(50% - 1.5rem);
   }
   @include mq($from: wide) {
-    width: calc(33% - 1.5rem);
+    width: calc(33% - 1rem);
   }
 }
 
@@ -176,6 +176,17 @@ li {
     font-weight: 200;
     margin-left: 0.8em;
   }
+  @include mq($from: desktop) {
+    header {
+      font-size: 1rem;
+    }
+    dt {
+      font-size: 1.1rem;
+    }
+    dd {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .dont-break-out {
@@ -197,8 +208,7 @@ li {
 }
 
 .nota {
-  font-size: 1.3rem;
-  line-height: 1.3;
+  font-size: 1rem;
   font-weight: 200;
   font-style: italic;
   color: #333333;
@@ -213,7 +223,7 @@ li {
     }
   }
   @include mq($from: tablet) {
-    max-width: 60%;
+    max-width: 80%;
   }
 }
 </style>
