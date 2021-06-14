@@ -173,7 +173,7 @@ export default {
     align-items: flex-start;
     > :first-child {
       width: 65%;
-      margin-right: 3rem;
+      margin-right: 2rem;
     }
     > :last-child {
       width: 55%;
@@ -185,7 +185,6 @@ export default {
 .equilibrio-parte-2 {
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 1rem;
   > :first-child {
     max-width: 80vw;
     margin: 0 0 3rem auto;
@@ -243,7 +242,7 @@ export default {
   line-height: 1;
   color: $brand-color;
   text-align: center;
-  margin: 10rem 0;
+  margin: 7rem 0 8rem;
   @include mq($from: tablet) {
     font-size: rem(75px);
   }
@@ -291,17 +290,18 @@ export default {
 .seccion-visita-medico {
   padding: 12.5rem 0;
   h2 {
-    font-size: rem(55px);
+    font-size: rem(53px);
     font-weight: 200;
     color: $brand-color;
   }
   .slogan {
     font-size: 70px;
     line-height: 1.1;
-    margin: 3rem 0 4rem;
+    margin: 2.5rem 0 4rem;
     span {
-      display: inline-block;
-      margin: 0 0 0 auto;
+      display: block;
+      width: max-content;
+      margin: 0 1em 0 auto;
     }
     b {
       font-weight: 400;
