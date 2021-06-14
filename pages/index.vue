@@ -127,6 +127,20 @@ export default {
 <style lang="scss">
 .is-home {
   background-color: #000000;
+  .cabecera {
+    a {
+      color: white;
+      img {
+        filter: invert(100%);
+      }
+    }
+    .nav-ppal {
+      color: white;
+    }
+    .hamburger {
+      filter: invert(100%);
+    }
+  }
   main {
     padding: 0;
   }
