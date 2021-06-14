@@ -110,7 +110,7 @@ ul.has-flechas {
     width: 1px;
     height: 100%;
     position: absolute;
-    left: 1rem;
+    left: 18px;
     top: 0;
     background-color: black;
   }
@@ -136,6 +136,9 @@ ul.has-flechas {
     }
   }
   @include mq($from: tablet) {
+    &::before {
+      left: 20px;
+    }
     > li {
       &::before {
         width: 40px;
@@ -170,15 +173,19 @@ ul.has-circulos {
 
 .texto-decorativo {
   height: 139px;
-  margin: 5rem 0;
+  margin: 5rem 0 5rem auto;
   position: relative;
   img {
-    max-width: calc(80vw);
+    max-width: MIN(calc(70vw), 300px);
+    max-width: calc(70vw);
+    height: auto;
     position: absolute;
     right: 0;
   }
   @include mq($from: tablet) {
-    max-width: 500px;
+    img {
+      max-width: 500px;
+    }
   }
 }
 </style>

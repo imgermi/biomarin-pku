@@ -1,55 +1,58 @@
 <template>
-  <div class="inner-container">
-    <div>
-      <p v-font="$getFont('Playfair Display', 400)">
-        Ponete en contacto para recibir más información.
-      </p>
+  <div class="form-contacto">
+    <div class="inner-container">
+      <div>
+        <p v-font="$getFont('Playfair Display', 400)">
+          Ponete en contacto para recibir más información.
+        </p>
+      </div>
+
+      <div>
+        <form
+          v-font="[$getFont('Roboto', 200)]"
+          method="GET"
+          action="thank-you-page"
+        >
+          <div class="form-control">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input id="nombre" type="text" name="nombre" />
+          </div>
+
+          <div class="form-control">
+            <label for="email">Mail:</label>
+            <input id="email" type="email" name="email" />
+          </div>
+
+          <div class="form-control">
+            <label for="edad">Edad:</label>
+            <input id="edad" type="text" pattern="[0-9]+" name="edad" />
+          </div>
+
+          <div class="form-checkbox">
+            <input
+              id="consentimiento"
+              type="checkbox"
+              name="consentimiento"
+              value="1"
+            />
+            <!-- TODO: Formulario: Términos y condiciones en español -->
+            <label for="consentimiento">
+              Ao clicar nesta caixa ao lado e submeter minhas informações no
+              botão abaixo, eu confirmo que tenho pelo menos 18 anos de idade; e
+              confirmo consentimento às Mães Metabólicas* e BioMarin Brasil
+              Farmacêutica Ltda. (assim como suas agências) a utilizarem meus
+              dados e e-mail para manter-me informado sobre a campanha LEMBRE DE
+              MIM PKU e outras oportunidades que podem ser do meu interesse; e
+              confirmo estar de acordo com as Políticas de Privacidade da e
+              Termos de Uso da BioMarin.
+            </label>
+          </div>
+
+          <CButton type="submit">Enviar</CButton>
+        </form>
+      </div>
     </div>
-
-    <div>
-      <form
-        v-font="[$getFont('Roboto', 200)]"
-        method="GET"
-        action="thank-you-page"
-      >
-        <div class="form-control">
-          <label for="nombre">Nombre y Apellido:</label>
-          <input id="nombre" type="text" name="nombre" />
-        </div>
-
-        <div class="form-control">
-          <label for="email">Mail:</label>
-          <input id="email" type="email" name="email" />
-        </div>
-
-        <div class="form-control">
-          <label for="edad">Edad:</label>
-          <input id="edad" type="text" pattern="[0-9]+" name="edad" />
-        </div>
-
-        <div class="form-checkbox">
-          <input
-            id="consentimiento"
-            type="checkbox"
-            name="consentimiento"
-            value="1"
-          />
-          <!-- TODO: Formulario: Términos y condiciones en español -->
-          <label for="consentimiento">
-            Ao clicar nesta caixa ao lado e submeter minhas informações no botão
-            abaixo, eu confirmo que tenho pelo menos 18 anos de idade; e
-            confirmo consentimento às Mães Metabólicas* e BioMarin Brasil
-            Farmacêutica Ltda. (assim como suas agências) a utilizarem meus
-            dados e e-mail para manter-me informado sobre a campanha LEMBRE DE
-            MIM PKU e outras oportunidades que podem ser do meu interesse; e
-            confirmo estar de acordo com as Políticas de Privacidade da e Termos
-            de Uso da BioMarin.
-          </label>
-        </div>
-
-        <CButton type="submit">Enviar</CButton>
-      </form>
-    </div>
+    <WhatsApp class="whatsapp" />
   </div>
 </template>
 
@@ -162,5 +165,10 @@ input[type='checkbox'] {
   &:disabled + label::before {
     background: #ddd;
   }
+}
+.form-contacto .whatsapp {
+  display: block;
+  width: max-content;
+  margin: 3rem 0 0 auto;
 }
 </style>

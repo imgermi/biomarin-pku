@@ -327,7 +327,7 @@ $hamburger-types: (elastic);
     text-align: center;
     position: relative;
     font-size: 2rem;
-    margin: 6rem 0 4rem;
+    margin: 12rem 0 4rem;
     > ul {
       margin: 0 auto;
       display: inline-block;

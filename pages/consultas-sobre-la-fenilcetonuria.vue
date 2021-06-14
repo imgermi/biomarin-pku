@@ -13,12 +13,20 @@ export default {
     return {
       title: 'Consultas',
       bodyAttrs: {
-        class: 'has-brand-color-bg',
+        class: 'es-consultas has-brand-color-bg',
       },
     }
   },
 }
 </script>
+
+<style lang="scss">
+.es-consultas {
+  main {
+    padding-bottom: 2rem;
+  }
+}
+</style>
 
 <style lang="scss" scoped>
 h1 {

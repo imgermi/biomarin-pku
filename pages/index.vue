@@ -338,7 +338,7 @@ export default {
 
 .seccion-contacto {
   background-color: $brand-color;
-  padding: 4rem 0 9rem;
+  padding: 4rem 0 2rem;
   margin-bottom: 0;
 }
 </style>

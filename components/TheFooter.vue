@@ -207,6 +207,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 0;
   > li {
     font-size: 20px;
     color: #1a1a1a;

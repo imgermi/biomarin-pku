@@ -209,11 +209,9 @@ export default {
   }
   @include mq($from: tablet) {
     justify-content: flex-end;
-    margin-right: 7rem;
+    margin-right: rem(20px);
   }
   @include mq($from: desktop) {
-    justify-content: flex-end;
-    margin-right: 7rem;
     li {
       font-size: 1.5rem;
     }

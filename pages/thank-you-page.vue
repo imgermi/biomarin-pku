@@ -17,6 +17,8 @@
         <RedesSociales />
       </div>
     </div>
+
+    <WhatsApp class="whatsapp" />
   </div>
 </template>
 
@@ -51,5 +53,9 @@ p {
   line-height: 1.2;
   font-weight: 200;
   margin-bottom: 2.5rem;
+}
+.whatsapp {
+  display: inline-block;
+  margin: -20px 0 0 auto;
 }
 </style>
