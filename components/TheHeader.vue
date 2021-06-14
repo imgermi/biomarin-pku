@@ -175,6 +175,10 @@ export default {
   font-size: 12px;
   font-weight: 400;
   text-decoration: none;
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
 
 // https://jonsuh.com/hamburgers/
@@ -370,15 +374,25 @@ $hamburger-types: (elastic);
   .overlay-hugeinc.close .nav-ppal > ul {
     transform: translateY(25%) rotateX(-35deg);
   }
+}
 
-  // @media screen and (max-height: 30.5em) {
-  //   .overlay nav {
-  //     height: 70%;
-  //     font-size: 34px;
-  //   }
-  //   .overlay ul li {
-  //     min-height: 34px;
-  //   }
-  // }
+.has-black-header .cabecera {
+  .seccion-a {
+    a {
+      color: white;
+      img {
+        filter: invert(100%);
+      }
+    }
+    .titulo:hover {
+      color: white;
+    }
+  }
+  .nav-ppal {
+    color: white;
+  }
+  .hamburger {
+    filter: invert(100%);
+  }
 }
 </style>

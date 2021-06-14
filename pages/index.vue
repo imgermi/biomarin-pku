@@ -117,7 +117,7 @@ export default {
     return {
       title: 'Home',
       bodyAttrs: {
-        class: 'is-home',
+        class: 'is-home has-black-header',
       },
     }
   },
@@ -127,20 +127,6 @@ export default {
 <style lang="scss">
 .is-home {
   background-color: #000000;
-  .cabecera {
-    a {
-      color: white;
-      img {
-        filter: invert(100%);
-      }
-    }
-    .nav-ppal {
-      color: white;
-    }
-    .hamburger {
-      filter: invert(100%);
-    }
-  }
   main {
     padding: 0;
   }
@@ -161,9 +147,11 @@ export default {
     }
   }
   @include mq($from: tablet) {
-    font-size: rem(65px);
-    strong {
-      font-size: rem(185px);
+    h2 {
+      font-size: rem(65px);
+      strong {
+        font-size: rem(185px);
+      }
     }
   }
 }

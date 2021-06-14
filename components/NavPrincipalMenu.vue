@@ -100,6 +100,7 @@ button:focus-visible {
   }
   &.nuxt-link-active {
     font-weight: 400;
+    text-decoration: underline;
   }
   &::after {
     content: '';
@@ -111,6 +112,10 @@ button:focus-visible {
     margin-left: 4px;
   }
 }
+.has-black-header :not(.open) .menu-boton::after {
+  filter: invert(100%);
+}
+
 .menu-opciones {
   display: flex;
   flex-direction: column;
@@ -140,6 +145,7 @@ button:focus-visible {
     line-height: 1.2;
     border-radius: 2px;
     cursor: pointer;
+    &.nuxt-link-exact-active,
     &:hover {
       text-decoration: underline;
     }
