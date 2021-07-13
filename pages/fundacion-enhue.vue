@@ -292,7 +292,7 @@ a.logo {
   white-space: nowrap;
   .logo--feni & {
     color: black;
-    background-color: #8ede2f;
+    background-color: #a6ce3a;
   }
   .logo--enhue & {
     color: white;
