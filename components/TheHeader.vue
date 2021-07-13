@@ -156,6 +156,15 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @include mq($from: desktop) {
+      max-width: 960px;
+    }
+    @include mq($from: wide) {
+      max-width: 1140px;
+    }
+    @include mq($from: full) {
+      max-width: 1320px;
+    }
   }
 }
 

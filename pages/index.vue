@@ -148,9 +148,9 @@ export default {
   }
   @include mq($from: tablet) {
     h2 {
-      font-size: rem(65px);
+      font-size: 2.44rem;
       strong {
-        font-size: rem(185px);
+        font-size: 6.94rem;
       }
     }
   }
@@ -244,7 +244,7 @@ export default {
   text-align: center;
   margin: 7rem 0 8rem;
   @include mq($from: tablet) {
-    font-size: rem(75px);
+    font-size: 2.81rem;
   }
 }
 
@@ -260,9 +260,10 @@ export default {
     position: absolute;
     top: 0;
     right: 38%;
-    width: 1355px;
-    height: 946px;
+    width: 1016px;
+    height: 709px;
     background: url('~assets/img/riendas-de-mi-vida.png') no-repeat center;
+    background-size: contain;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url('~assets/img/riendas-de-mi-vida_2x.png');
     }
@@ -279,7 +280,7 @@ export default {
   }
   @include mq($from: tablet) {
     p {
-      font-size: rem(75px);
+      font-size: 2.8rem;
     }
     br {
       display: block;
@@ -319,7 +320,7 @@ export default {
   }
   @include mq($from: tablet) {
     .slogan {
-      font-size: rem(233px);
+      font-size: 8.74rem;
     }
   }
 }

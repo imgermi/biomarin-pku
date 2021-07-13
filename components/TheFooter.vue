@@ -147,6 +147,17 @@
   color: #868686;
   background-color: #fbfbfb;
   padding: 70px 0 30px;
+  .container {
+    @include mq($from: desktop) {
+      max-width: 960px;
+    }
+    @include mq($from: wide) {
+      max-width: 1140px;
+    }
+    @include mq($from: full) {
+      max-width: 1320px;
+    }
+  }
   section {
     margin: 0 20px 20px 0;
   }

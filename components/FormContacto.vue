@@ -92,13 +92,14 @@ p {
     margin: -0.2em 0.5em 0 0;
   }
   @include mq($from: wide) {
-    font-size: rem(115px);
+    font-size: 4.3rem;
   }
 }
 
 form {
   @include mq($from: tablet) {
     max-width: rem(550px);
+    margin-left: auto;
   }
 }
 

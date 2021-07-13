@@ -38,13 +38,13 @@
     max-width: 720px;
   }
   @include mq($from: desktop) {
-    max-width: 960px;
+    max-width: 864px;
   }
   @include mq($from: wide) {
-    max-width: 1140px;
+    max-width: 1026px;
   }
   @include mq($from: full) {
-    max-width: 1320px;
+    max-width: 1188px;
   }
 }
 
