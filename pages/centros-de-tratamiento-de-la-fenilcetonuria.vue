@@ -137,7 +137,7 @@ li {
   width: 100%;
   margin: 1.2rem 0;
   @include mq($from: tablet) {
-    margin: rem(15px) rem(20px) rem(15px) 0;
+    margin: 0.5rem rem(20px) 0.5rem 0;
     width: calc(50% - 1.5rem);
   }
   @include mq($from: wide) {
