@@ -19,7 +19,7 @@
         exposición a la dieta proteica, es decir, a la lactancia materna.
       </p>
 
-      <div class="img-wrapper">
+      <div class="img-wrapper tiene-decoracion-diagnostico">
         <img
           width="851"
           height="605"
@@ -82,6 +82,26 @@ p {
 }
 .img-wrapper {
   margin-top: 3rem;
+  &.tiene-decoracion-diagnostico {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 20px;
+      margin-left: 50%;
+      transform: translateX(-50vw);
+      background: url('~assets/img/diagnostico-decoracion-1x.png') no-repeat
+        left bottom;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url('~assets/img/diagnostico-decoracion-2x.png');
+      }
+    }
+  }
   @include mq($from: desktop) {
     max-width: 75%;
   }
