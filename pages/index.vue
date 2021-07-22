@@ -126,6 +126,7 @@ export default {
 
 <style lang="scss">
 .is-home {
+  overflow-x: hidden;
   background-color: #000000;
   main {
     padding: 0;
@@ -223,11 +224,26 @@ export default {
     font-weight: 200;
     font-size: 18px;
     margin: 0 0 2em 0;
+    &::after {
+      content: '';
+      display: block;
+      width: 10rem;
+      height: 1rem;
+      margin-top: 15px;
+      margin-left: auto;
+      background: url('~assets/img/home-decoracion-tomar-las-riendas-1x.png')
+        no-repeat left center;
+      background-size: contain;
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url('~assets/img/home-decoracion-tomar-las-riendas-2x.png');
+      }
+    }
   }
   .img-wrapper {
     max-width: 80%;
   }
   @include mq($from: tablet) {
+    $tomarRiendasTextoMargenDerechaTablet: 5rem;
     flex-direction: row;
     align-items: center;
     .img-wrapper {
@@ -235,7 +251,17 @@ export default {
     }
     p {
       font-size: rem(30px);
-      margin: 0 5rem 0 0;
+      margin: 0 $tomarRiendasTextoMargenDerechaTablet 0 0;
+      &::after {
+        margin-top: 150px;
+
+        margin-right: -#{$tomarRiendasTextoMargenDerechaTablet};
+      }
+    }
+  }
+  @include mq($from: tablet) {
+    p::after {
+      margin-top: 0;
     }
   }
 }
@@ -246,6 +272,43 @@ export default {
   color: $brand-color;
   text-align: center;
   margin: 7rem 0 8rem;
+  position: relative;
+  &::before {
+    content: '';
+    display: none;
+    width: 12rem;
+    height: 12rem;
+    top: 35%;
+    right: 100%;
+    background: url('~assets/img/home-decoracion-crear-conciencia-1-1x.png')
+      no-repeat right center;
+    background-size: contain;
+    position: absolute;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('~assets/img/home-decoracion-crear-conciencia-1-2x.png');
+    }
+    @include mq($from: tablet) {
+      display: block;
+    }
+  }
+  &::after {
+    content: '';
+    display: none;
+    width: 8rem;
+    height: 8rem;
+    top: 0;
+    left: 100%;
+    background: url('~assets/img/home-decoracion-crear-conciencia-2-1x.png')
+      no-repeat left center;
+    background-size: contain;
+    position: absolute;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('~assets/img/home-decoracion-crear-conciencia-2-2x.png');
+    }
+    @include mq($from: tablet) {
+      display: block;
+    }
+  }
   @include mq($from: tablet) {
     font-size: 2.81rem;
   }
@@ -272,6 +335,28 @@ export default {
     }
     opacity: 0.5;
   }
+  .container {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 14rem;
+      height: 3rem;
+      background: url('~assets/img/home-decoracion-cita-1x.png') no-repeat left
+        center;
+      background-size: contain;
+      position: absolute;
+      bottom: 30px;
+      right: 0;
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url('~assets/img/home-decoracion-cita-2x.png');
+      }
+      @include mq($from: desktop) {
+        width: 12rem;
+        height: 2rem;
+      }
+    }
+  }
   p {
     font-size: 30px;
     line-height: 1.1;
@@ -297,6 +382,25 @@ export default {
     font-size: rem(53px);
     font-weight: 200;
     color: $brand-color;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 10rem;
+      height: 100%;
+      background: url('~assets/img/home-decoracion-visita-1x.png') no-repeat
+        left center;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      right: calc(100% + 1.5rem);
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url('~assets/img/home-decoracion-visita-2x.png');
+      }
+      @include mq($from: tablet) {
+        width: 12rem;
+      }
+    }
   }
   .slogan {
     font-size: 70px;
