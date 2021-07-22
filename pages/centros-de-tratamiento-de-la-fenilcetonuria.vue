@@ -181,10 +181,10 @@ li {
       font-size: 1rem;
     }
     dt {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
     }
     dd {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 }
