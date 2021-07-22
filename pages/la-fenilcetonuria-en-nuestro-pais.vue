@@ -6,12 +6,14 @@
     </h1>
 
     <div class="inner-container con-imagen">
-      <img
-        src="~assets/img/pku-en-argentina.svg"
-        width="556"
-        height="1274"
-        alt=""
-      />
+      <div class="img tiene-decoracion-pais">
+        <img
+          src="~assets/img/pku-en-argentina.svg"
+          width="556"
+          height="1274"
+          alt=""
+        />
+      </div>
       <div
         v-font="[
           $getFont('Roboto', 400),
@@ -78,6 +80,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$anchoMapaMobile: 70%;
 h1 {
   color: $brand-color;
 }
@@ -87,10 +90,44 @@ h1 {
     display: flex;
     flex-direction: column-reverse;
     padding: 0;
-    img {
-      width: 70%;
-      height: auto;
+    .img {
+      width: $anchoMapaMobile;
       margin: 4rem auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.tiene-decoracion-pais {
+  &::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 20px;
+    background: url('~assets/img/pais-decoracion-1x.png') no-repeat left bottom;
+    background-size: contain;
+    margin: -40px 0 0 calc(40px / -2 - (100% - #{$anchoMapaMobile}));
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('~assets/img/pais-decoracion-2x.png');
+    }
+    @media (min-width: 550px) {
+      margin-left: calc(
+        ((100vw - 510px + 40px) / -2 - (100% - #{$anchoMapaMobile}))
+      );
+    }
+    @include mq($from: tablet) {
+      margin-left: calc(((100vw - 720px + 40px) / -2));
+    }
+    @include mq($from: desktop) {
+      margin-left: calc((100vw - 864px + 40px) / -2);
+    }
+    @include mq($from: wide) {
+      margin-left: calc((100vw - 1026px + 40px) / -2);
+    }
+    @include mq($from: full) {
+      margin-left: calc((100vw - 1188px + 40px) / -2);
     }
   }
 }
@@ -129,7 +166,7 @@ p {
     padding: 0 3rem;
     &.con-imagen {
       flex-direction: row;
-      img {
+      .img {
         flex: 1 0 auto;
         width: 40%;
         padding-right: 15px;
