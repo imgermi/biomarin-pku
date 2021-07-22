@@ -159,7 +159,8 @@ export default {
 .equilibrio-parte-1 {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
+  max-width: 90%;
+  margin: 6rem auto 0;
   > :first-child {
     margin-left: -14%;
   }
@@ -185,6 +186,8 @@ export default {
 .equilibrio-parte-2 {
   display: flex;
   flex-direction: column-reverse;
+  max-width: 90%;
+  margin: 0 auto;
   > :first-child {
     max-width: 80vw;
     margin: 0 0 3rem auto;
@@ -200,7 +203,7 @@ export default {
     > :first-child {
       width: 45%;
       margin-top: 3rem;
-      margin-left: -25%;
+      margin-left: -20%;
       margin-right: 2rem;
     }
     > :last-child {
