@@ -21,7 +21,7 @@
           $getFont('Roboto', 200, 'italic', { selector: 'small' }),
           $getFont('Playfair Display', 700, 'normal', { selector: 'strong' }),
         ]"
-        class="texto"
+        class="texto tiene-decoracion-pais-texto"
       >
         <p>
           La pesquisa neonatal de hiperfenilalaninemias (HPA) realizada por la
@@ -135,6 +135,32 @@ h1 {
   max-width: rem(540px);
   margin: 3em auto;
 }
+$textoMapaMarginTopDesktop: 12rem;
+.tiene-decoracion-pais-texto {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 170px;
+    height: 20px;
+    background: url('~assets/img/pais-decoracion-2-1x.png') no-repeat left
+      bottom;
+    background-size: contain;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('~assets/img/pais-decoracion-2-2x.png');
+    }
+    @include mq($from: tablet) {
+      top: -50px;
+      right: -30px;
+    }
+    @include mq($from: desktop) {
+      top: -#{$textoMapaMarginTopDesktop};
+    }
+  }
+}
 p {
   font-size: 1.6rem;
   font-weight: 200;
@@ -173,7 +199,7 @@ p {
         margin-top: 0;
       }
       .texto {
-        margin-top: 12rem;
+        margin-top: $textoMapaMarginTopDesktop;
       }
     }
   }
