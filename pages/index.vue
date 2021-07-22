@@ -191,6 +191,7 @@ export default {
   margin: 0 auto;
   > :first-child {
     max-width: 80vw;
+    height: auto;
     margin: 0 0 3rem auto;
   }
   > :last-child {
